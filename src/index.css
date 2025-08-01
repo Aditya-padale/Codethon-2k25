@@ -127,10 +127,14 @@ All colors MUST be HSL.
 
   html {
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
   }
 
   body {
     @apply bg-background text-foreground font-light;
+    margin: 0;
+    padding: 0;
     background-image: 
       radial-gradient(circle at 20% 80%, hsl(240 4.8% 95.9% / 0.3) 0%, transparent 50%),
       radial-gradient(circle at 80% 20%, hsl(221.2 83.2% 53.3% / 0.08) 0%, transparent 50%),

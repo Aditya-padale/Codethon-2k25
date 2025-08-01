@@ -28,25 +28,25 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center pt-20">
+      <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto space-y-12 animate-fade-in">
           {/* Custom Header Design */}
           <div className="relative max-w-4xl mx-auto mb-8">
             <div className="relative group">
               {/* Background container with gradient */}
-              <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-xl px-8 py-6 hover:border-accent-primary/30 transition-all duration-300 overflow-hidden">
+              <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-xl px-4 md:px-8 py-4 md:py-6 hover:border-accent-primary/30 transition-all duration-300 overflow-hidden">
                 
                 {/* Top and bottom accent lines */}
                 <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary"></div>
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-accent-secondary via-accent-primary to-accent-secondary"></div>
 
-                {/* Main content - centered layout */}
-                <div className="relative z-10 flex items-center justify-center gap-8">
+                {/* Main content - responsive layout */}
+                <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
                   
                   {/* Logo */}
                   <div className="relative flex-shrink-0">
                     <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-full blur-xl"></div>
-                    <div className="relative w-24 h-24 bg-background border-2 border-accent-primary/40 hover:border-accent-primary/70 transition-all duration-300 shadow-lg rounded-full p-3">
+                    <div className="relative w-16 h-16 md:w-24 md:h-24 bg-background border-2 border-accent-primary/40 hover:border-accent-primary/70 transition-all duration-300 shadow-lg rounded-full p-2 md:p-3">
                       <img 
                         src={LogoImage} 
                         alt="ADCET Logo" 
@@ -55,34 +55,29 @@ const Hero = () => {
                     </div>
                   </div>
                   
-                  {/* College Information - Centered */}
+                  {/* College Information - Centered and responsive */}
                   <div className="text-center flex-1">
-                    <h3 className="text-red-400 text-base font-medium mb-1">
+                    <h3 className="text-red-400 text-xs md:text-base font-medium mb-1">
                       Sant Dnyaneshwar Shikshan Sanstha's
                     </h3>
-                    <h2 className="text-red-500 text-lg font-bold mb-2">
+                    <h2 className="text-red-500 text-sm md:text-lg font-bold mb-1 md:mb-2 leading-tight">
                       Annasaheb Dange College of Engineering and Technology (ADCET), Ashta
                     </h2>
-                    <p className="text-muted-foreground text-sm mb-1 leading-relaxed">
+                    <p className="text-muted-foreground text-xs md:text-sm mb-1 leading-relaxed">
                       An Empowered Autonomous Institute, affiliated to Shivaji University, Kolhapur
                     </p>
-                    <p className="text-muted-foreground text-sm mb-1">
+                    <p className="text-muted-foreground text-xs md:text-sm mb-1">
                       Approved by AICTE, New Delhi & Govt. of Maharashtra
                     </p>
-                    <div className="flex justify-center items-center gap-4 mt-2">
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 mt-2">
                       <p className="text-muted-foreground/80 text-xs">
                         Accredited by NAAC 'A+' Grade, Bangalore
                       </p>
-                      <span className="text-muted-foreground/60">•</span>
+                      <span className="text-muted-foreground/60 hidden md:inline">•</span>
                       <p className="text-accent-secondary text-xs font-medium">
                         Eligible Programs Accredited by NBA, New Delhi
                       </p>
                     </div>
-                  </div>
-
-                  {/* Empty Right Section */}
-                  <div className="relative flex-shrink-0 w-16">
-                    {/* Empty space for balance */}
                   </div>
                 </div>
 
@@ -105,12 +100,12 @@ const Hero = () => {
             {/* Decorative elements */}
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-accent-primary to-transparent" />
             
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-light tracking-tight leading-none">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-light tracking-tight leading-none">
               <span className="block font-mono text-accent-primary relative">
                 <span className="relative z-10">Codathon</span>
                 <div className="absolute inset-0 blur-2xl bg-accent-primary/20 scale-110" />
               </span>
-              <span className="block text-7xl md:text-9xl font-mono text-accent-secondary mt-2 relative">
+              <span className="block text-5xl sm:text-7xl md:text-9xl font-mono text-accent-secondary mt-2 relative">
                 <span className="relative z-10">2k25</span>
                 <div className="absolute inset-0 blur-2xl bg-accent-secondary/20 scale-110" />
               </span>
@@ -127,9 +122,9 @@ const Hero = () => {
 
           {/* Tagline */}
           <div className="relative">
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed px-4">
               <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent font-medium">Unleash Your Inner Coder:</span>
-              <br className="hidden md:inline" />
+              <br className="hidden sm:inline" />
               <span className="text-muted-foreground/80"> Compete, Create, Conquer</span>
             </p>
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-accent-secondary to-transparent" />
@@ -150,39 +145,39 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto pt-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto pt-16 px-4">
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105">
-                <Calendar className="w-8 h-8 text-accent-primary mx-auto mb-3 group-hover:rotate-12 transition-transform duration-300" />
-                <div className="text-3xl font-light text-foreground mb-1">3</div>
+              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105">
+                <Calendar className="w-6 h-6 md:w-8 md:h-8 text-accent-primary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
+                <div className="text-2xl md:text-3xl font-light text-foreground mb-1">3</div>
                 <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Rounds</div>
               </div>
             </div>
             
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
-                <Code className="w-8 h-8 text-accent-secondary mx-auto mb-3 group-hover:rotate-12 transition-transform duration-300" />
-                <div className="text-2xl font-light text-foreground mb-1">C • Python • Java</div>
+              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
+                <Code className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
+                <div className="text-sm md:text-2xl font-light text-foreground mb-1">C • Python • Java</div>
                 <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Languages</div>
               </div>
             </div>
             
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105">
-                <Trophy className="w-8 h-8 text-accent-primary mx-auto mb-3 group-hover:rotate-12 transition-transform duration-300" />
-                <div className="text-3xl font-light text-foreground mb-1">Winner</div>
+              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105">
+                <Trophy className="w-6 h-6 md:w-8 md:h-8 text-accent-primary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
+                <div className="text-2xl md:text-3xl font-light text-foreground mb-1">Winner</div>
                 <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Internship</div>
               </div>
             </div>
             
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
-                <Users className="w-8 h-8 text-accent-secondary mx-auto mb-3 group-hover:rotate-12 transition-transform duration-300" />
-                <div className="text-3xl font-light text-foreground mb-1">B.Tech</div>
+              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
+                <Users className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
+                <div className="text-2xl md:text-3xl font-light text-foreground mb-1">B.Tech</div>
                 <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Final Year</div>
               </div>
             </div>

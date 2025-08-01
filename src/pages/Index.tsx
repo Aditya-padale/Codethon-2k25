@@ -9,9 +9,9 @@ import Dock from "@/components/Dock";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background m-0 p-0">
       {/* Main content */}
-      <main>
+      <main className="m-0 p-0">
         <div id="hero">
           <Hero />
         </div>
