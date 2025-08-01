@@ -5,15 +5,13 @@ import Rules from "@/components/Rules";
 import Registration from "@/components/Registration";
 import InstituteJourney from "@/components/InstituteJourney";
 import Footer from "@/components/Footer";
-import Navigation from "@/components/Navigation";
+import Dock from "@/components/Dock";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-      
-      {/* Main content with proper spacing for bottom navigation */}
-      <main className="pb-20 md:pb-0">
+      {/* Main content */}
+      <main>
         <div id="hero">
           <Hero />
         </div>
@@ -35,6 +33,7 @@ const Index = () => {
       </main>
       
       <Footer />
+      <Dock />
     </div>
   );
 };

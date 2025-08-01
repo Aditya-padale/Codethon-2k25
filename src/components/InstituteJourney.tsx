@@ -31,7 +31,7 @@ const InstituteJourney = () => {
   return (
     <section id="institute-journey" className="py-32 relative overflow-hidden">
       {/* Enhanced Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-900/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/30 to-transparent" />
       <div className="absolute top-20 left-1/4 w-96 h-96 bg-accent-primary/5 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-accent-secondary/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-accent-primary/3 to-accent-secondary/3 rounded-full blur-3xl" />
@@ -45,7 +45,7 @@ const InstituteJourney = () => {
             <span>Ashta, Sangli, Maharashtra</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
-            Institute <span className="font-mono text-accent-primary bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">Journey</span>
+            Institute <span className="font-mono bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">Journey</span>
           </h2>
           <p className="text-xl text-neutral-400 max-w-4xl mx-auto font-light leading-relaxed">
             From humble beginnings to becoming Western Maharashtra's premier engineering institution - 
@@ -58,7 +58,7 @@ const InstituteJourney = () => {
         <div className="mb-24 relative">
           <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-3xl blur-2xl opacity-60"></div>
           
-          <Card className="relative max-w-6xl mx-auto bg-gradient-to-br from-neutral-900/80 to-neutral-800/80 border border-accent-primary/30 backdrop-blur-sm overflow-hidden">
+          <Card className="relative max-w-6xl mx-auto bg-card/90 border border-accent-primary/30 backdrop-blur-sm overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary"></div>
             
             <CardHeader className="text-center pt-12 pb-8">
@@ -192,7 +192,7 @@ const InstituteJourney = () => {
                         {/* Enhanced Glow Effect */}
                         <div className={`absolute -inset-2 bg-gradient-to-r ${milestone.color} rounded-3xl blur-xl opacity-0 group-hover:opacity-60 transition-all duration-700`}></div>
                         
-                        <Card className="relative hover:scale-105 transition-all duration-500 bg-gradient-to-br from-neutral-900/90 to-neutral-800/90 border border-neutral-700/50 backdrop-blur-sm overflow-hidden group-hover:shadow-2xl">
+                        <Card className="relative hover:scale-105 transition-all duration-500 bg-card/90 border border-border backdrop-blur-sm overflow-hidden group-hover:shadow-2xl">
                           {/* Card Accent Border */}
                           <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${milestone.color}`}></div>
                           
@@ -252,7 +252,7 @@ const InstituteJourney = () => {
 
             {/* Timeline Summary Stats */}
             <div className="mt-20 text-center">
-              <Card className="max-w-4xl mx-auto bg-gradient-to-br from-neutral-900/80 to-neutral-800/80 border border-accent-primary/30 backdrop-blur-sm overflow-hidden">
+              <Card className="max-w-4xl mx-auto bg-card/90 border border-accent-primary/30 backdrop-blur-sm overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary"></div>
                 
                 <CardContent className="py-12 px-8">
@@ -291,7 +291,7 @@ const InstituteJourney = () => {
         <div className="text-center relative">
           <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-3xl blur-2xl opacity-60"></div>
           
-          <Card className="relative max-w-6xl mx-auto bg-gradient-to-br from-neutral-900/80 to-neutral-800/80 border border-accent-primary/30 backdrop-blur-sm overflow-hidden">
+          <Card className="relative max-w-6xl mx-auto bg-card/90 border border-accent-primary/30 backdrop-blur-sm overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-secondary via-accent-primary to-accent-secondary"></div>
             
             <CardContent className="py-16 px-8">

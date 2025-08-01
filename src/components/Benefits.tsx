@@ -64,7 +64,7 @@ const Benefits = () => {
   return (
     <section className="py-32 relative overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/40 via-transparent to-neutral-900/40" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/40" />
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-secondary/5 rounded-full blur-3xl" />
       
@@ -91,7 +91,7 @@ const Benefits = () => {
                 {/* Glow effect */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${benefit.gradient} rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500`} />
                 
-                <Card className="relative hover:scale-105 transition-all duration-500 bg-neutral-900/60 border-neutral-700/50 backdrop-blur-sm h-full group-hover:border-accent-primary/30 hover:shadow-2xl">
+                <Card className="relative hover:scale-105 transition-all duration-500 bg-card/80 border-border backdrop-blur-sm h-full group-hover:border-accent-primary/30 hover:shadow-2xl">
                   <CardHeader className="text-center pb-4 relative">
                     {/* Icon with enhanced styling */}
                     <div className={`w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br ${benefit.gradient} border border-neutral-600/50 flex items-center justify-center group-hover:scale-110 transition-all duration-300 relative group-hover:border-accent-primary/30`}>
@@ -128,7 +128,7 @@ const Benefits = () => {
             {/* Glow effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-all duration-500" />
             
-            <Card className="relative max-w-5xl mx-auto bg-gradient-to-br from-neutral-900/80 to-neutral-800/80 border border-accent-primary/30 backdrop-blur-sm group-hover:border-accent-primary/50 transition-all duration-500">
+            <Card className="relative max-w-5xl mx-auto bg-card/90 border border-accent-primary/30 backdrop-blur-sm group-hover:border-accent-primary/50 transition-all duration-500">
               <CardContent className="py-16 px-8">
                 <div className="flex items-center justify-center gap-4 mb-8">
                   <div className="p-3 rounded-full bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30">

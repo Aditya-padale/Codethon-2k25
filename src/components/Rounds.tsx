@@ -47,7 +47,7 @@ const Rounds = () => {
   return (
     <section className="py-32 relative">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-900/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/30 to-transparent" />
       <div className="absolute top-20 left-1/4 w-64 h-64 bg-accent-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-1/4 w-64 h-64 bg-accent-secondary/5 rounded-full blur-3xl" />
       
@@ -74,7 +74,7 @@ const Rounds = () => {
                 {/* Glow effect */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${round.color} rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500`} />
                 
-                <Card className={`relative hover:scale-105 transition-all duration-500 bg-neutral-900/60 border ${round.borderColor} backdrop-blur-sm h-full overflow-hidden group-hover:shadow-2xl`}>
+                <Card className={`relative hover:scale-105 transition-all duration-500 bg-card/80 border ${round.borderColor} backdrop-blur-sm h-full overflow-hidden group-hover:shadow-2xl`}>
                   {/* Card header with improved styling */}
                   <CardHeader className="text-center pb-6 relative">
                     {/* Round number badge */}

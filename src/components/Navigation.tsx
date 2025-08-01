@@ -116,7 +116,7 @@ const Navigation = () => {
       {/* Desktop Navigation (Top) */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 md:block hidden ${
         isScrolled 
-          ? 'bg-neutral-900/90 backdrop-blur-md border-b border-neutral-800/50' 
+          ? 'bg-background/90 backdrop-blur-md border-b border-border' 
           : 'bg-transparent'
       }`}>
         <div className="container mx-auto px-6 py-4">
@@ -162,7 +162,7 @@ const Navigation = () => {
       </nav>
 
       {/* Mobile Top Header (Simplified) */}
-      <nav className="fixed top-0 left-0 right-0 z-50 md:hidden bg-neutral-900/95 backdrop-blur-md border-b border-neutral-800/50">
+      <nav className="fixed top-0 left-0 right-0 z-50 md:hidden bg-background/95 backdrop-blur-md border-b border-border">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
             <div className="p-1.5 rounded-lg bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30">

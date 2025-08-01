@@ -67,7 +67,7 @@ const Rules = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-neutral-900/30 border-neutral-800 backdrop-blur-sm">
+          <Card className="bg-card/80 border-border backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="text-xl font-medium text-center text-foreground flex items-center justify-center gap-3">
                 <AlertCircle className="w-6 h-6 text-accent-primary" />
@@ -80,7 +80,7 @@ const Rules = () => {
                 return (
                   <div 
                     key={index} 
-                    className={`flex items-start gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-neutral-800/50 ${
+                    className={`flex items-start gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-muted/50 ${
                       rule.important ? 'bg-accent-primary/5 border border-accent-primary/20' : ''
                     }`}
                   >

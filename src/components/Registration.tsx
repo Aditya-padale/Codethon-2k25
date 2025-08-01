@@ -30,7 +30,7 @@ const Registration = () => {
   return (
     <section className="py-32 relative overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/60 via-transparent to-neutral-800/60" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/60 via-transparent to-background/60" />
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-accent-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-accent-secondary/10 rounded-full blur-3xl" />
       
@@ -41,7 +41,7 @@ const Registration = () => {
             <span>Limited Time Registration</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
-            <span className="font-mono text-accent-secondary bg-gradient-to-r from-accent-secondary to-accent-primary bg-clip-text text-transparent">Register</span> Now
+            <span className="font-mono bg-gradient-to-r from-accent-secondary to-accent-primary bg-clip-text text-transparent">Register</span> Now
           </h2>
           <p className="text-xl text-neutral-400 max-w-3xl mx-auto font-light leading-relaxed">
             Secure your spot in this prestigious national-level coding competition
@@ -55,7 +55,7 @@ const Registration = () => {
             {/* Glow effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-all duration-500" />
             
-            <Card className="relative bg-gradient-to-br from-neutral-900/80 to-neutral-800/80 border border-accent-primary/30 backdrop-blur-sm group-hover:border-accent-primary/50 transition-all duration-500">
+            <Card className="relative bg-card/90 border border-accent-primary/30 backdrop-blur-sm group-hover:border-accent-primary/50 transition-all duration-500">
               <CardHeader className="text-center relative">
                 <div className="absolute top-4 right-4">
                   <Sparkles className="w-6 h-6 text-accent-secondary animate-pulse" />
@@ -150,7 +150,7 @@ const Registration = () => {
                   {/* Glow effect */}
                   <div className={`absolute inset-0 bg-gradient-to-r ${contact.gradient} rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500`} />
                   
-                  <Card className="relative bg-gradient-to-br from-neutral-900/60 to-neutral-800/60 border border-neutral-700/50 backdrop-blur-sm group-hover:border-accent-primary/30 transition-all duration-500 hover:scale-105">
+                  <Card className="relative bg-card/80 border border-border backdrop-blur-sm group-hover:border-accent-primary/30 transition-all duration-500 hover:scale-105">
                     <CardContent className="p-8">
                       <div className="flex items-center gap-6">
                         <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${contact.gradient} border border-neutral-600/50 flex items-center justify-center group-hover:scale-110 transition-all duration-300 relative`}>
@@ -183,7 +183,7 @@ const Registration = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-2xl blur-xl opacity-60 group-hover:opacity-100 transition-all duration-500" />
               
-              <Card className="relative bg-gradient-to-br from-neutral-900/80 to-neutral-800/80 border border-accent-primary/30 backdrop-blur-sm">
+              <Card className="relative bg-card/90 border border-accent-primary/30 backdrop-blur-sm">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-3 rounded-full bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30">
