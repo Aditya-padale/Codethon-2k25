@@ -113,12 +113,12 @@ const Hero = () => {
             {/* Decorative elements */}
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-accent-primary to-transparent" />
             
-            <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-bold leading-[1.1] animate-fade-in-up">
+            <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-light leading-[1.1] animate-fade-in-up">
               
-              <span className="bg-gradient-to-r py-4 from-[#FF7A01] via-[#FFB366] to-[#727889] text-transparent bg-clip-text font-audiowide">Codathon</span>
+              <span className="bg-gradient-to-r py-4 from-[#FF7A01] via-[#FFB366] to-[#727889] text-transparent bg-clip-text font-mono">Codathon</span>
               <br />
               
-              <span className="bg-gradient-to-r py-4 from-[#0767FB] to-[#4A90E2] text-transparent bg-clip-text font-sans">2k25</span>
+              <span className="bg-gradient-to-r py-4 from-[#0767FB] to-[#4A90E2] text-transparent bg-clip-text font-mono">2k25</span>
             </h1>
             
             {/* Code-themed decorations */}
@@ -195,7 +195,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-20">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-04">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-70" />
               <Button 
@@ -209,14 +209,14 @@ const Hero = () => {
               </Button>
             </div>
             
-            <div className="relative group">
+            <div className="relative inline-block p-[1px] rounded-xl bg-gradient-to-r from-accent-primary to-accent-secondary">
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="px-10 py-4 bg-transparent border-2 border-border hover:border-accent-primary/50 text-muted-foreground hover:text-foreground font-medium text-base rounded-xl transition-all duration-300 group-hover:scale-105 backdrop-blur-sm hover:bg-accent-primary/10"
+                className="px-10 py-4 bg-background/80 backdrop-blur-sm border-0 text-muted-foreground hover:text-foreground font-medium text-base rounded-xl transition-all duration-300 hover:scale-105 hover:bg-background/90"
                 onClick={scrollToNextSection}
               >
-                Learn More
+                About College
               </Button>
             </div>
           </div>
