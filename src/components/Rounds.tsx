@@ -53,9 +53,11 @@ const Rounds = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-24 animate-slide-up">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-neutral-800/50 to-neutral-700/50 border border-accent-primary/20 rounded-full px-4 py-2 text-accent-primary text-sm backdrop-blur-sm mb-6">
-            <Zap className="w-4 h-4" />
-            <span>Competition Structure</span>
+          <div className="relative inline-block p-[1px] rounded-full mb-6 bg-gradient-to-r from-accent-primary to-accent-secondary">
+            <div className="inline-flex items-center gap-3 bg-background/80 backdrop-blur-sm rounded-full px-6 py-3 text-accent-primary text-sm">
+              <Zap className="w-5 h-5" />
+              <span className="font-medium">Competition Structure</span>
+            </div>
           </div>
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
             Competition <span className="font-mono text-accent-primary bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">Rounds</span>
@@ -74,11 +76,11 @@ const Rounds = () => {
                 {/* Glow effect */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${round.color} rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500`} />
                 
-                <Card className={`relative hover:scale-105 transition-all duration-500 bg-card/80 border ${round.borderColor} backdrop-blur-sm h-full overflow-hidden group-hover:shadow-2xl`}>
+                <Card className={`relative hover:scale-105 transition-all duration-500 bg-card/80 border ${round.borderColor} backdrop-blur-sm h-full group-hover:shadow-2xl`}>
                   {/* Card header with improved styling */}
                   <CardHeader className="text-center pb-6 relative">
                     {/* Round number badge */}
-                    <div className="absolute -top-4 -right-4 w-10 h-10 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg">
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-full flex items-center justify-center text-white font-bold text-xs shadow-lg z-10">
                       {index + 1}
                     </div>
                     
@@ -119,42 +121,88 @@ const Rounds = () => {
 
         {/* Enhanced Process Flow */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-neutral-900/80 to-neutral-800/80 backdrop-blur-sm border border-neutral-700/50 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-medium text-foreground mb-8">Competition Journey</h3>
-            <div className="flex items-center justify-center gap-8 flex-wrap">
-              <div className="flex items-center gap-3 text-neutral-300 group hover:text-accent-primary transition-colors duration-300">
-                <div className="p-3 rounded-xl bg-blue-500/20 border border-blue-500/30 group-hover:bg-blue-500/30 transition-colors duration-300">
-                  <Monitor className="w-6 h-6" />
+          <div className="relative group">
+            {/* Glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-all duration-500" />
+            
+            <Card className="relative max-w-5xl mx-auto bg-card/90 border border-accent-primary/30 backdrop-blur-sm group-hover:border-accent-primary/50 transition-all duration-500 overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary"></div>
+              
+              <CardContent className="py-12 px-8">
+                <div className="flex items-center justify-center gap-4 mb-10">
+                  <div className="p-3 rounded-full bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30">
+                    <Trophy className="w-8 h-8 text-accent-primary" />
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-light text-foreground">Competition <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent font-medium">Journey</span></h3>
+                  <div className="p-3 rounded-full bg-gradient-to-r from-accent-secondary/20 to-accent-primary/20 border border-accent-secondary/30">
+                    <Zap className="w-8 h-8 text-accent-secondary" />
+                  </div>
                 </div>
-                <span className="font-medium">Online Test</span>
-              </div>
-              
-              <div className="flex items-center gap-2">
-                <div className="w-12 h-px bg-gradient-to-r from-accent-primary to-accent-secondary" />
-                <ChevronRight className="w-5 h-5 text-accent-primary animate-pulse" />
-                <div className="w-12 h-px bg-gradient-to-r from-accent-primary to-accent-secondary" />
-              </div>
-              
-              <div className="flex items-center gap-3 text-neutral-300 group hover:text-accent-secondary transition-colors duration-300">
-                <div className="p-3 rounded-xl bg-purple-500/20 border border-purple-500/30 group-hover:bg-purple-500/30 transition-colors duration-300">
-                  <Code2 className="w-6 h-6" />
+                
+                <p className="text-lg text-neutral-300 mb-12 font-light max-w-2xl mx-auto leading-relaxed">
+                  Your path to success through three carefully designed stages
+                </p>
+                
+                <div className="flex items-center justify-center flex-wrap gap-6 md:gap-12">
+                  {/* Online Test */}
+                  <div className="flex flex-col items-center group/item hover:scale-105 transition-all duration-300">
+                    <div className="relative mb-4">
+                      <div className="absolute -inset-2 bg-blue-500/20 rounded-2xl blur-lg opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative p-4 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-600/10 border border-blue-500/30 group-hover/item:border-blue-400/50 group-hover/item:bg-blue-500/30 transition-all duration-300">
+                        <Monitor className="w-8 h-8 text-blue-400 group-hover/item:scale-110 transition-transform duration-300" />
+                      </div>
+                    </div>
+                    <span className="text-neutral-300 font-medium group-hover/item:text-blue-400 transition-colors duration-300">Online Test</span>
+                    <span className="text-xs text-neutral-500 mt-1">MCQ Round</span>
+                  </div>
+                  
+                  {/* Arrow 1 */}
+                  <div className="hidden md:flex items-center gap-3">
+                    <div className="w-16 h-px bg-gradient-to-r from-blue-400 to-purple-400"></div>
+                    <ChevronRight className="w-6 h-6 text-accent-primary animate-pulse" />
+                    <div className="w-16 h-px bg-gradient-to-r from-blue-400 to-purple-400"></div>
+                  </div>
+                  
+                  {/* Campus Coding */}
+                  <div className="flex flex-col items-center group/item hover:scale-105 transition-all duration-300">
+                    <div className="relative mb-4">
+                      <div className="absolute -inset-2 bg-purple-500/20 rounded-2xl blur-lg opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative p-4 rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-600/10 border border-purple-500/30 group-hover/item:border-purple-400/50 group-hover/item:bg-purple-500/30 transition-all duration-300">
+                        <Code2 className="w-8 h-8 text-purple-400 group-hover/item:scale-110 transition-transform duration-300" />
+                      </div>
+                    </div>
+                    <span className="text-neutral-300 font-medium group-hover/item:text-purple-400 transition-colors duration-300">Campus Coding</span>
+                    <span className="text-xs text-neutral-500 mt-1">DSA Challenge</span>
+                  </div>
+                  
+                  {/* Arrow 2 */}
+                  <div className="hidden md:flex items-center gap-3">
+                    <div className="w-16 h-px bg-gradient-to-r from-purple-400 to-amber-400"></div>
+                    <ChevronRight className="w-6 h-6 text-accent-secondary animate-pulse" style={{animationDelay: '1s'}} />
+                    <div className="w-16 h-px bg-gradient-to-r from-purple-400 to-amber-400"></div>
+                  </div>
+                  
+                  {/* Final Victory */}
+                  <div className="flex flex-col items-center group/item hover:scale-105 transition-all duration-300">
+                    <div className="relative mb-4">
+                      <div className="absolute -inset-2 bg-amber-500/20 rounded-2xl blur-lg opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
+                      <div className="relative p-4 rounded-2xl bg-gradient-to-br from-amber-500/20 to-amber-600/10 border border-amber-500/30 group-hover/item:border-amber-400/50 group-hover/item:bg-amber-500/30 transition-all duration-300">
+                        <Trophy className="w-8 h-8 text-amber-400 group-hover/item:scale-110 group-hover/item:rotate-12 transition-all duration-300" />
+                      </div>
+                    </div>
+                    <span className="text-neutral-300 font-medium group-hover/item:text-amber-400 transition-colors duration-300">Final Victory</span>
+                    <span className="text-xs text-neutral-500 mt-1">Win Internship</span>
+                  </div>
                 </div>
-                <span className="font-medium">Campus Coding</span>
-              </div>
-              
-              <div className="flex items-center gap-2">
-                <div className="w-12 h-px bg-gradient-to-r from-accent-secondary to-accent-primary" />
-                <ChevronRight className="w-5 h-5 text-accent-secondary animate-pulse" style={{animationDelay: '1s'}} />
-                <div className="w-12 h-px bg-gradient-to-r from-accent-secondary to-accent-primary" />
-              </div>
-              
-              <div className="flex items-center gap-3 text-neutral-300 group hover:text-amber-400 transition-colors duration-300">
-                <div className="p-3 rounded-xl bg-amber-500/20 border border-amber-500/30 group-hover:bg-amber-500/30 transition-colors duration-300">
-                  <Trophy className="w-6 h-6" />
+                
+                {/* Bottom accent */}
+                <div className="pt-8 mt-8 border-t border-neutral-700/30">
+                  <p className="text-sm text-neutral-400 font-light">
+                    Progress through each stage to unlock amazing opportunities
+                  </p>
                 </div>
-                <span className="font-medium">Final Victory</span>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { QrCode, ExternalLink, Phone, Mail, User, Sparkles, Clock, CheckCircle } from "lucide-react";
 
 const Registration = () => {
@@ -35,10 +36,12 @@ const Registration = () => {
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-accent-secondary/10 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-24 animate-slide-up">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-neutral-800/50 to-neutral-700/50 border border-accent-primary/20 rounded-full px-4 py-2 text-accent-primary text-sm backdrop-blur-sm mb-6">
-            <Clock className="w-4 h-4" />
-            <span>Limited Time Registration</span>
+        {/* Enhanced Header */}
+        <div className="text-center mb-20 animate-slide-up">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30 rounded-full px-6 py-3 text-accent-primary text-sm backdrop-blur-sm mb-8 hover:scale-105 transition-transform duration-300">
+            <Clock className="w-5 h-5 animate-spin" />
+            <span className="font-medium">Registration Closing Soon</span>
+            <Badge variant="destructive" className="ml-2 animate-bounce">HOT</Badge>
           </div>
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
             <span className="font-mono bg-gradient-to-r from-accent-secondary to-accent-primary bg-clip-text text-transparent">Register</span> Now
