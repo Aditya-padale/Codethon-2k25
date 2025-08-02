@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="relative max-w-4xl mx-auto mb-8">
             <div className="relative group">
               {/* Background container with gradient */}
-              <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-xl px-4 md:px-8 py-4 md:py-6 hover:border-accent-primary/30 transition-all duration-300 overflow-hidden">
+              <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-xl px-4 md:px-6 py-3 md:py-4 hover:border-accent-primary/30 transition-all duration-300 overflow-hidden">
                 
                 {/* Top and bottom accent lines */}
                 <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary"></div>
@@ -55,25 +55,38 @@ const Hero = () => {
                     </div>
                   </div>
                   
-                  {/* College Information - Centered and responsive */}
-                  <div className="text-center flex-1">
-                    <h3 className="text-red-400 text-xs md:text-base font-medium mb-1">
+                  {/* College Information - Mobile View */}
+                  <div className="text-center flex-1 md:hidden">
+                    <h3 className="text-red-400 text-xs font-medium mb-1">
                       Sant Dnyaneshwar Shikshan Sanstha's
                     </h3>
-                    <h2 className="text-red-500 text-sm md:text-lg font-bold mb-1 md:mb-2 leading-tight">
+                    <h2 className="text-red-500 text-sm font-bold mb-1 leading-tight">
                       Annasaheb Dange College of Engineering and Technology (ADCET), Ashta
                     </h2>
-                    <p className="text-muted-foreground text-xs md:text-sm mb-1 leading-relaxed">
+                    <p className="text-muted-foreground text-xs mb-1 leading-relaxed">
                       An Empowered Autonomous Institute, affiliated to Shivaji University, Kolhapur
                     </p>
-                    <p className="text-muted-foreground text-xs md:text-sm mb-1">
+                  </div>
+
+                  {/* College Information - Desktop View */}
+                  <div className="text-center flex-1 hidden md:block">
+                    <h3 className="text-red-400 text-base font-medium mb-1">
+                      Sant Dnyaneshwar Shikshan Sanstha's
+                    </h3>
+                    <h2 className="text-red-500 text-lg font-bold mb-2 leading-tight">
+                      Annasaheb Dange College of Engineering and Technology (ADCET), Ashta
+                    </h2>
+                    <p className="text-muted-foreground text-sm mb-1 leading-relaxed">
+                      An Empowered Autonomous Institute, affiliated to Shivaji University, Kolhapur
+                    </p>
+                    <p className="text-muted-foreground text-sm mb-1">
                       Approved by AICTE, New Delhi & Govt. of Maharashtra
                     </p>
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 mt-2">
+                    <div className="flex flex-row justify-center items-center gap-4 mt-2">
                       <p className="text-muted-foreground/80 text-xs">
                         Accredited by NAAC 'A+' Grade, Bangalore
                       </p>
-                      <span className="text-muted-foreground/60 hidden md:inline">•</span>
+                      <span className="text-muted-foreground/60">•</span>
                       <p className="text-accent-secondary text-xs font-medium">
                         Eligible Programs Accredited by NBA, New Delhi
                       </p>
@@ -96,19 +109,16 @@ const Hero = () => {
           </div>
           
           {/* Main Title */}
-          <div className="space-y-6 relative">
+          <div className="mb-12 relative">
             {/* Decorative elements */}
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-20 h-px bg-gradient-to-r from-transparent via-accent-primary to-transparent" />
             
-            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-light tracking-tight leading-none">
-              <span className="block font-mono text-accent-primary relative">
-                <span className="relative z-10">Codathon</span>
-                <div className="absolute inset-0 blur-2xl bg-accent-primary/20 scale-110" />
-              </span>
-              <span className="block text-5xl sm:text-7xl md:text-9xl font-mono text-accent-secondary mt-2 relative">
-                <span className="relative z-10">2k25</span>
-                <div className="absolute inset-0 blur-2xl bg-accent-secondary/20 scale-110" />
-              </span>
+            <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-bold leading-[1.1] animate-fade-in-up">
+              
+              <span className="bg-gradient-to-r py-4 from-[#FF7A01] via-[#FFB366] to-[#727889] text-transparent bg-clip-text font-audiowide">Codathon</span>
+              <br />
+              
+              <span className="bg-gradient-to-r py-4 from-[#0767FB] to-[#4A90E2] text-transparent bg-clip-text font-sans">2k25</span>
             </h1>
             
             {/* Code-themed decorations */}
@@ -131,7 +141,7 @@ const Hero = () => {
           </div>
           
           {/* College Info */}
-          <div className="space-y-4 pt-8 relative">
+          {/* <div className="space-y-4 pt-8 relative">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 max-w-2xl mx-auto">
               <h2 className="text-lg md:text-xl font-medium text-foreground mb-2">
                 Annasaheb Dange College of Engineering and Technology
@@ -142,10 +152,10 @@ const Hero = () => {
                 <span className="w-2 h-2 bg-accent-primary rounded-full animate-pulse" style={{animationDelay: '1s'}} />
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto pt-16 px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto pt-4 px-4">
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
               <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105">
@@ -159,7 +169,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
               <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
                 <Code className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
-                <div className="text-sm md:text-2xl font-light text-foreground mb-1">C • Python • Java</div>
+                <div className="text-lg md:text-xl font-light text-foreground mb-1">C • Python • Java</div>
                 <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Languages</div>
               </div>
             </div>
@@ -178,7 +188,8 @@ const Hero = () => {
               <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
                 <Users className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
                 <div className="text-2xl md:text-3xl font-light text-foreground mb-1">B.Tech</div>
-                <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Final Year</div>
+                <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Final Year Only
+                </div>
               </div>
             </div>
           </div>
@@ -202,7 +213,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="px-10 py-4 bg-transparent border-2 border-neutral-600 hover:border-accent-primary/50 text-neutral-200 hover:text-white font-medium text-lg rounded-xl transition-all duration-300 group-hover:scale-105 backdrop-blur-sm hover:bg-accent-primary/5"
+                className="px-10 py-4 bg-transparent border-2 border-border hover:border-accent-primary/50 text-muted-foreground hover:text-foreground font-medium text-base rounded-xl transition-all duration-300 group-hover:scale-105 backdrop-blur-sm hover:bg-accent-primary/10"
                 onClick={scrollToNextSection}
               >
                 Learn More
@@ -219,7 +230,7 @@ const Hero = () => {
       <div className="absolute bottom-1/3 right-1/4 w-px h-20 bg-gradient-to-b from-transparent via-accent-secondary/20 to-transparent animate-float" style={{animationDelay: '4s'}}></div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <button 
           onClick={scrollToNextSection}
           className="flex flex-col items-center gap-2 text-neutral-400 hover:text-accent-primary transition-colors duration-300 group"
@@ -229,7 +240,7 @@ const Hero = () => {
             <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-300" />
           </div>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

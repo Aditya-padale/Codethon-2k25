@@ -32,11 +32,11 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     if (typeof window !== 'undefined') {
       // Check localStorage first
       const savedTheme = localStorage.getItem('theme') as Theme;
-      if (savedTheme) {
+      if (savedTheme && ['light', 'dark'].includes(savedTheme)) {
         return savedTheme;
       }
       
-      // Check system preference
+      // If no saved theme, detect system preference and set it as the theme
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         return 'dark';
       }

@@ -21,6 +21,7 @@ export default {
 			fontFamily: {
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
 				'mono': ['Space Grotesk', 'ui-monospace', 'monospace'],
+				'audiowide': ['Audiowide', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

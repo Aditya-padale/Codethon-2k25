@@ -8,7 +8,7 @@ import {
   Github, 
   Linkedin, 
   Sun, 
-  Moon 
+  Moon
 } from "lucide-react";
 
 const Dock = () => {

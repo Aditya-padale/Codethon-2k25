@@ -61,7 +61,7 @@ const Registration = () => {
                   <Sparkles className="w-6 h-6 text-accent-secondary animate-pulse" />
                 </div>
                 <CardTitle className="text-3xl font-light mb-6">
-                  Join the <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent font-medium">Codathon</span>
+                  Join the <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent font-audiowide">Codathon</span>
                 </CardTitle>
                 <p className="text-lg text-neutral-300 font-light">
                   Register through our official partner platform

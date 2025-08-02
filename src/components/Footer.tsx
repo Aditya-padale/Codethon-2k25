@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <h3 className="text-2xl font-light text-foreground">
-                <span className="font-mono text-accent-primary">Codathon</span>
+                <span className="font-audiowide text-accent-primary">Codathon</span>
                 <span className="text-lg text-accent-secondary ml-2">2k25</span>
               </h3>
               <p className="text-muted-foreground font-light leading-relaxed">
