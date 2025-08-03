@@ -57,7 +57,7 @@ const InstituteJourney = () => {
           {/* <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
             About <span className="font-mono bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">ADCET</span>
           </h2>
-          <p className="text-xl text-neutral-400 max-w-4xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto font-light leading-relaxed">
             From humble beginnings to becoming Western Maharashtra's premier engineering institution - 
             A legacy of 25 years in shaping tomorrow's engineers
           </p>

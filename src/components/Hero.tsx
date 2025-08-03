@@ -13,22 +13,25 @@ const Hero = () => {
       description: "The competition consists of 3 challenging rounds designed to test your coding skills progressively.",
       details: [
         {
-          round: "Round 1: Aptitude & Technical MCQs",
-          description: "Multiple choice questions covering programming fundamentals, data structures, algorithms, and logical reasoning.",
-          duration: "60 minutes",
-          type: "Screening Round"
+          round: "Round 1: Training Ground",
+          description: "Online MCQ based test on basic C, Python, Java and programming concepts. Top 120 participants qualify for Round 2.",
+          duration: "6 hours 1 minute (12:09 AM - 6:10 AM IST)",
+          type: "Online Screening Round",
+          date: "13 Aug 25"
         },
         {
-          round: "Round 2: Coding Challenge",
-          description: "Solve algorithmic problems using your preferred programming language. Test your problem-solving skills.",
-          duration: "90 minutes", 
-          type: "Programming Round"
+          round: "Round 2: Battle Arena",
+          description: "Offline coding round at ADCET campus focusing on DSA and problem-solving. Top 50 participants qualify for final round.",
+          duration: "3 hours (10:09 PM - 1:09 AM IST)", 
+          type: "Semi-Final Coding Round",
+          date: "15-16 Aug 25"
         },
         {
-          round: "Round 3: Final Coding Sprint",
-          description: "Advanced coding problems for qualified candidates. The ultimate test of your programming prowess.",
-          duration: "120 minutes",
-          type: "Final Round"
+          round: "Round 3: Victory Quest",
+          description: "Final coding round conducted and evaluated by CCTech with industry-based problem statements. Winners receive internship opportunities.",
+          duration: "3 hours (2:09 AM - 5:09 AM IST)",
+          type: "Final Round",
+          date: "16 Aug 25"
         }
       ]
     },
@@ -61,24 +64,24 @@ const Hero = () => {
       description: "The top performer will receive an exclusive internship opportunity with industry mentorship.",
       details: [
         {
-          benefit: "Paid Internship",
-          description: "3-6 months paid internship with leading tech companies or startups.",
-          value: "₹15,000 - ₹25,000/month"
+          benefit: "Internship cum Placement Opportunity",
+          description: "Exciting internship cum placement opportunity for top performers with mentorship from industry leaders.",
+          value: "Direct Industry Placement"
         },
         {
-          benefit: "Industry Mentorship",
-          description: "Direct guidance from experienced software engineers and tech leads.",
-          value: "1-on-1 sessions"
+          benefit: "Industry Mentorship & Training",
+          description: "Mentorship and training by industry leaders for winners with direct industry exposure.",
+          value: "Professional Guidance"
         },
         {
-          benefit: "Certificate & Recognition",
-          description: "Official completion certificate and LinkedIn recommendation.",
-          value: "Career boost"
+          benefit: "Participation Certificate",
+          description: "National-level participation certificate recognizing your coding expertise and competitive spirit.",
+          value: "Career Recognition"
         },
         {
-          benefit: "Network Access",
-          description: "Connect with alumni network and industry professionals.",
-          value: "Lifetime access"
+          benefit: "Industry Exposure",
+          description: "Direct exposure to real-world industry problems and networking opportunities with IT professionals.",
+          value: "Professional Network"
         }
       ]
     },
@@ -88,23 +91,23 @@ const Hero = () => {
       details: [
         {
           criteria: "Academic Standing",
-          description: "Must be currently enrolled in final year (4th year) of B.Tech program.",
-          requirement: "Final Year B.Tech"
+          description: "Must be currently enrolled in final year (4th year) of B.Tech program graduating in 2026.",
+          requirement: "B Tech Final Year (2026 Graduates)"
         },
         {
-          criteria: "Branch Eligibility", 
-          description: "Open to all engineering branches - CSE, IT, ECE, EEE, Mechanical, Civil, etc.",
-          requirement: "All Branches Welcome"
+          criteria: "Participation Mode", 
+          description: "Only individual participation is allowed. Team registrations are not permitted.",
+          requirement: "Individual Participation Only"
         },
         {
           criteria: "Programming Knowledge",
-          description: "Basic understanding of at least one programming language (C/Python/Java).",
-          requirement: "Fundamental Coding Skills"
+          description: "Basic understanding of C, Python, and Java programming languages with DSA fundamentals.",
+          requirement: "C/Python/Java Proficiency"
         },
         {
-          criteria: "Registration",
-          description: "Must register through official Unstop platform before the deadline.",
-          requirement: "Valid Registration"
+          criteria: "Registration Deadline",
+          description: "Must register through official Unstop platform before 07 Sep 25, 11:59 PM IST.",
+          requirement: "Register by 07 Sep 25"
         }
       ]
     }
@@ -121,16 +124,16 @@ const Hero = () => {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Consistent Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-primary/8 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-secondary/8 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-muted/30 rounded-full blur-2xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-primary/5 dark:bg-accent-primary/8 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-secondary/5 dark:bg-accent-secondary/8 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-muted/20 dark:bg-muted/30 rounded-full blur-2xl" />
         
         {/* Floating particles */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-accent-primary/30 rounded-full animate-float" style={{animationDelay: '0s'}} />
-        <div className="absolute top-40 right-20 w-1 h-1 bg-accent-secondary/40 rounded-full animate-float" style={{animationDelay: '2s'}} />
-        <div className="absolute top-60 left-1/4 w-1.5 h-1.5 bg-accent-primary/20 rounded-full animate-float" style={{animationDelay: '4s'}} />
-        <div className="absolute bottom-40 right-1/3 w-2 h-2 bg-accent-secondary/30 rounded-full animate-float" style={{animationDelay: '1s'}} />
-        <div className="absolute bottom-60 left-1/3 w-1 h-1 bg-accent-primary/40 rounded-full animate-float" style={{animationDelay: '3s'}} />
+        <div className="absolute top-20 left-10 w-2 h-2 bg-accent-primary/20 dark:bg-accent-primary/30 rounded-full animate-float" style={{animationDelay: '0s'}} />
+        <div className="absolute top-40 right-20 w-1 h-1 bg-accent-secondary/30 dark:bg-accent-secondary/40 rounded-full animate-float" style={{animationDelay: '2s'}} />
+        <div className="absolute top-60 left-1/4 w-1.5 h-1.5 bg-accent-primary/15 dark:bg-accent-primary/20 rounded-full animate-float" style={{animationDelay: '4s'}} />
+        <div className="absolute bottom-40 right-1/3 w-2 h-2 bg-accent-secondary/20 dark:bg-accent-secondary/30 rounded-full animate-float" style={{animationDelay: '1s'}} />
+        <div className="absolute bottom-60 left-1/3 w-1 h-1 bg-accent-primary/25 dark:bg-accent-primary/40 rounded-full animate-float" style={{animationDelay: '3s'}} />
       </div>
 
       {/* Content */}
@@ -140,7 +143,7 @@ const Hero = () => {
           <div className="relative max-w-4xl mx-auto mb-8 mt-8 md:mt-12">
             <div className="relative group">
               {/* Background container with gradient */}
-              <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-xl px-4 md:px-6 py-3 md:py-4 hover:border-accent-primary/30 transition-all duration-300 overflow-hidden">
+              <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-xl px-4 md:px-6 py-3 md:py-4 hover:border-accent-primary/30 transition-all duration-300 overflow-hidden shadow-lg dark:shadow-none">
                 
                 {/* Top and bottom accent lines */}
                 <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary"></div>
@@ -151,8 +154,8 @@ const Hero = () => {
                   
                   {/* Logo */}
                   <div className="relative flex-shrink-0">
-                    <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-full blur-xl"></div>
-                    <div className="relative w-16 h-16 md:w-24 md:h-24 bg-background border-2 border-accent-primary/40 hover:border-accent-primary/70 transition-all duration-300 shadow-lg rounded-full p-2 md:p-3">
+                    <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/15 to-accent-secondary/15 dark:from-accent-primary/20 dark:to-accent-secondary/20 rounded-full blur-xl"></div>
+                    <div className="relative w-16 h-16 md:w-24 md:h-24 bg-background border-2 border-accent-primary/50 hover:border-accent-primary/70 transition-all duration-300 shadow-xl dark:shadow-lg rounded-full p-2 md:p-3">
                       <img 
                         src={LogoImage} 
                         alt="ADCET Logo" 
@@ -209,7 +212,7 @@ const Hero = () => {
                 </div>
 
                 {/* Glow effect */}
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary/5 to-accent-secondary/5 rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary/3 to-accent-secondary/3 dark:from-accent-primary/5 dark:to-accent-secondary/5 rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
               </div>
             </div>
           </div>
@@ -238,10 +241,10 @@ const Hero = () => {
 
           {/* Tagline */}
           <div className="relative">
-            <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed px-4">
+            <p className="text-lg md:text-xl lg:text-2xl text-foreground/80 dark:text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed px-4">
               <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent font-medium">Unleash Your Inner Coder:</span>
               <br className="hidden sm:inline" />
-              <span className="text-muted-foreground/80"> Compete, Create, Conquer</span>
+              <span className="text-foreground/70 dark:text-muted-foreground/80"> Compete, Create, Conquer</span>
             </p>
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-accent-secondary to-transparent" />
           </div>
@@ -263,38 +266,38 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto pt-4 px-4">
             <div className="group relative cursor-pointer" onClick={() => setSelectedCard('rounds')}>
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/5 to-accent-secondary/5 dark:from-accent-primary/10 dark:to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-primary/10 group-hover:to-accent-secondary/10 dark:group-hover:from-accent-primary/15 dark:group-hover:to-accent-secondary/15 transition-all duration-300" />
+              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/50 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none">
                 <Calendar className="w-6 h-6 md:w-8 md:h-8 text-accent-primary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
                 <div className="text-2xl md:text-3xl font-light text-foreground mb-1">3</div>
-                <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Rounds</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Rounds</div>
               </div>
             </div>
             
             <div className="group relative cursor-pointer" onClick={() => setSelectedCard('languages')}>
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/5 to-accent-primary/5 dark:from-accent-secondary/10 dark:to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-secondary/10 group-hover:to-accent-primary/10 dark:group-hover:from-accent-secondary/15 dark:group-hover:to-accent-primary/15 transition-all duration-300" />
+              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none">
                 <Code className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
                 <div className="text-lg md:text-xl font-light text-foreground mb-1">C • Python • Java</div>
-                <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Languages</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Languages</div>
               </div>
             </div>
             
             <div className="group relative cursor-pointer" onClick={() => setSelectedCard('internship')}>
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/5 to-accent-secondary/5 dark:from-accent-primary/10 dark:to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-primary/10 group-hover:to-accent-secondary/10 dark:group-hover:from-accent-primary/15 dark:group-hover:to-accent-secondary/15 transition-all duration-300" />
+              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/50 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none">
                 <Trophy className="w-6 h-6 md:w-8 md:h-8 text-accent-primary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
                 <div className="text-2xl md:text-3xl font-light text-foreground mb-1">Winner</div>
-                <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Internship</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Internship</div>
               </div>
             </div>
             
             <div className="group relative cursor-pointer" onClick={() => setSelectedCard('eligibility')}>
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/5 to-accent-primary/5 dark:from-accent-secondary/10 dark:to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-secondary/10 group-hover:to-accent-primary/10 dark:group-hover:from-accent-secondary/15 dark:group-hover:to-accent-primary/15 transition-all duration-300" />
+              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none">
                 <Users className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
                 <div className="text-2xl md:text-3xl font-light text-foreground mb-1">B.Tech</div>
-                <div className="text-xs text-neutral-400 uppercase tracking-wider font-medium">Final Year Only
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Final Year Only
                 </div>
               </div>
             </div>
@@ -303,7 +306,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-04">
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-70" />
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-50 dark:opacity-70" />
               <Button 
                 variant="default" 
                 size="lg" 
@@ -319,7 +322,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="px-10 py-4 bg-background/80 backdrop-blur-sm border-0 text-muted-foreground hover:text-foreground font-medium text-base rounded-xl transition-all duration-300 hover:scale-105 hover:bg-background/90"
+                className="px-10 py-4 bg-background/95 dark:bg-background/80 backdrop-blur-sm border-0 text-foreground/80 hover:text-foreground dark:text-muted-foreground dark:hover:text-foreground font-medium text-base rounded-xl transition-all duration-300 hover:scale-105 hover:bg-background/100 dark:hover:bg-background/90 shadow-lg dark:shadow-none"
                 onClick={scrollToNextSection}
               >
                 About College
@@ -331,12 +334,12 @@ const Hero = () => {
       
       {/* Modal for Card Details */}
       {selectedCard && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto scrollbar-hide">
+        <div className="fixed inset-0 bg-black/60 dark:bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="relative bg-card/98 dark:bg-card/95 backdrop-blur-sm border border-border rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto scrollbar-hide shadow-2xl dark:shadow-xl">
             {/* Fixed Floating Close Button */}
             <button
               onClick={() => setSelectedCard(null)}
-              className="fixed top-6 right-6 p-3 rounded-full bg-background/90 hover:bg-background border-2 border-border hover:border-accent-primary/50 transition-all duration-200 z-[60] shadow-lg backdrop-blur-sm"
+              className="fixed top-6 right-6 p-3 rounded-full bg-background/95 hover:bg-background border-2 border-border hover:border-accent-primary/50 transition-all duration-200 z-[60] shadow-lg backdrop-blur-sm"
             >
               <X className="w-5 h-5" />
             </button>
@@ -347,7 +350,7 @@ const Hero = () => {
                 <h2 className="text-3xl md:text-4xl font-light text-foreground mb-3">
                   {cardDetails[selectedCard as keyof typeof cardDetails].title}
                 </h2>
-                <p className="text-muted-foreground text-lg font-light leading-relaxed">
+                <p className="text-foreground/70 dark:text-muted-foreground text-lg font-light leading-relaxed">
                   {cardDetails[selectedCard as keyof typeof cardDetails].description}
                 </p>
               </div>
@@ -358,15 +361,15 @@ const Hero = () => {
                   <div className="grid gap-6">
                     {cardDetails.rounds.details.map((round, index) => (
                       <div key={index} className="group relative">
-                        <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                        <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/8 to-accent-secondary/8 dark:from-accent-primary/10 dark:to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-primary/12 group-hover:to-accent-secondary/12 dark:group-hover:from-accent-primary/15 dark:group-hover:to-accent-secondary/15 transition-all duration-300" />
+                        <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/40 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-[1.02] shadow-lg dark:shadow-none">
                           <div className="flex items-start justify-between mb-4">
                             <h3 className="text-xl font-light text-foreground">{round.round}</h3>
                             <span className="px-3 py-1 text-xs bg-accent-primary/20 text-accent-primary rounded-full font-medium uppercase tracking-wider">
                               {round.type}
                             </span>
                           </div>
-                          <p className="text-muted-foreground font-light leading-relaxed mb-4">{round.description}</p>
+                          <p className="text-foreground/70 dark:text-muted-foreground font-light leading-relaxed mb-4">{round.description}</p>
                           <div className="flex items-center gap-4 text-sm text-accent-secondary font-light">
                             <span>⏱️ Duration: {round.duration}</span>
                           </div>
@@ -380,18 +383,18 @@ const Hero = () => {
                   <div className="grid gap-6">
                     {cardDetails.languages.details.map((lang, index) => (
                       <div key={index} className="group relative">
-                        <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                        <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/8 to-accent-primary/8 dark:from-accent-secondary/10 dark:to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-secondary/12 group-hover:to-accent-primary/12 dark:group-hover:from-accent-secondary/15 dark:group-hover:to-accent-primary/15 transition-all duration-300" />
+                        <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/40 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-[1.02] shadow-lg dark:shadow-none">
                           <div className="flex items-start justify-between mb-4">
                             <h3 className="text-xl font-light text-foreground">{lang.language}</h3>
                             <span className="px-3 py-1 text-xs bg-accent-secondary/20 text-accent-secondary rounded-full font-medium uppercase tracking-wider">
                               {lang.difficulty}
                             </span>
                           </div>
-                          <p className="text-muted-foreground font-light leading-relaxed mb-4">{lang.description}</p>
+                          <p className="text-foreground/70 dark:text-muted-foreground font-light leading-relaxed mb-4">{lang.description}</p>
                           <div className="flex flex-wrap gap-2">
                             {lang.features.map((feature, idx) => (
-                              <span key={idx} className="px-3 py-1 text-xs bg-muted/50 text-muted-foreground rounded-full font-light">
+                              <span key={idx} className="px-3 py-1 text-xs bg-muted/60 dark:bg-muted/50 text-foreground/70 dark:text-muted-foreground rounded-full font-light">
                                 {feature}
                               </span>
                             ))}
@@ -406,15 +409,15 @@ const Hero = () => {
                   <div className="grid gap-6">
                     {cardDetails.internship.details.map((benefit, index) => (
                       <div key={index} className="group relative">
-                        <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                        <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/8 to-accent-secondary/8 dark:from-accent-primary/10 dark:to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-primary/12 group-hover:to-accent-secondary/12 dark:group-hover:from-accent-primary/15 dark:group-hover:to-accent-secondary/15 transition-all duration-300" />
+                        <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/40 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-[1.02] shadow-lg dark:shadow-none">
                           <div className="flex items-start justify-between mb-4">
                             <h3 className="text-xl font-light text-foreground">{benefit.benefit}</h3>
-                            <span className="px-3 py-1 text-xs bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-400 rounded-full font-medium uppercase tracking-wider">
+                            <span className="px-3 py-1 text-xs bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-600 dark:text-green-400 rounded-full font-medium uppercase tracking-wider">
                               {benefit.value}
                             </span>
                           </div>
-                          <p className="text-muted-foreground font-light leading-relaxed">{benefit.description}</p>
+                          <p className="text-foreground/70 dark:text-muted-foreground font-light leading-relaxed">{benefit.description}</p>
                         </div>
                       </div>
                     ))}
@@ -425,15 +428,15 @@ const Hero = () => {
                   <div className="grid gap-6">
                     {cardDetails.eligibility.details.map((criteria, index) => (
                       <div key={index} className="group relative">
-                        <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                        <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/8 to-accent-primary/8 dark:from-accent-secondary/10 dark:to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-secondary/12 group-hover:to-accent-primary/12 dark:group-hover:from-accent-secondary/15 dark:group-hover:to-accent-primary/15 transition-all duration-300" />
+                        <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/40 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-[1.02] shadow-lg dark:shadow-none">
                           <div className="flex items-start justify-between mb-4">
                             <h3 className="text-xl font-light text-foreground">{criteria.criteria}</h3>
-                            <span className="px-3 py-1 text-xs bg-gradient-to-r from-blue-500/20 to-cyan-500/20 text-blue-400 rounded-full font-medium uppercase tracking-wider">
+                            <span className="px-3 py-1 text-xs bg-gradient-to-r from-blue-500/20 to-cyan-500/20 text-blue-600 dark:text-blue-400 rounded-full font-medium uppercase tracking-wider">
                               {criteria.requirement}
                             </span>
                           </div>
-                          <p className="text-muted-foreground font-light leading-relaxed">{criteria.description}</p>
+                          <p className="text-foreground/70 dark:text-muted-foreground font-light leading-relaxed">{criteria.description}</p>
                         </div>
                       </div>
                     ))}
@@ -445,7 +448,7 @@ const Hero = () => {
               <div className="mt-8 pt-6 border-t border-border">
                 <div className="flex justify-center">
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-70" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-50 dark:opacity-70" />
                     <Button
                       onClick={() => window.open('https://unstop.com/p/code-marathon-2k24-annasaheb-dange-college-of-engineering-and-technology-1151369', '_blank')}
                       className="relative px-10 py-4 bg-gradient-to-r from-accent-primary to-accent-secondary hover:from-accent-primary/90 hover:to-accent-secondary/90 text-white font-medium text-lg rounded-xl transition-all duration-300 group-hover:scale-105 shadow-xl"
@@ -462,16 +465,16 @@ const Hero = () => {
       )}
       
       {/* Enhanced decorative elements */}
-      <div className="absolute top-1/4 right-10 w-px h-32 bg-gradient-to-b from-transparent via-accent-primary/30 to-transparent animate-float"></div>
-      <div className="absolute bottom-1/4 left-10 w-px h-24 bg-gradient-to-b from-transparent via-accent-secondary/30 to-transparent animate-float" style={{animationDelay: '3s'}}></div>
-      <div className="absolute top-1/3 left-1/4 w-px h-16 bg-gradient-to-b from-transparent via-accent-primary/20 to-transparent animate-float" style={{animationDelay: '1s'}}></div>
-      <div className="absolute bottom-1/3 right-1/4 w-px h-20 bg-gradient-to-b from-transparent via-accent-secondary/20 to-transparent animate-float" style={{animationDelay: '4s'}}></div>
+      <div className="absolute top-1/4 right-10 w-px h-32 bg-gradient-to-b from-transparent via-accent-primary/20 dark:via-accent-primary/30 to-transparent animate-float"></div>
+      <div className="absolute bottom-1/4 left-10 w-px h-24 bg-gradient-to-b from-transparent via-accent-secondary/20 dark:via-accent-secondary/30 to-transparent animate-float" style={{animationDelay: '3s'}}></div>
+      <div className="absolute top-1/3 left-1/4 w-px h-16 bg-gradient-to-b from-transparent via-accent-primary/15 dark:via-accent-primary/20 to-transparent animate-float" style={{animationDelay: '1s'}}></div>
+      <div className="absolute bottom-1/3 right-1/4 w-px h-20 bg-gradient-to-b from-transparent via-accent-secondary/15 dark:via-accent-secondary/20 to-transparent animate-float" style={{animationDelay: '4s'}}></div>
       
       {/* Scroll Indicator */}
       {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <button 
           onClick={scrollToNextSection}
-          className="flex flex-col items-center gap-2 text-neutral-400 hover:text-accent-primary transition-colors duration-300 group"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-accent-primary transition-colors duration-300 group"
         >
           <span className="text-sm font-light">Explore</span>
           <div className="p-2 rounded-full border border-neutral-600 group-hover:border-accent-primary/50 transition-colors duration-300">

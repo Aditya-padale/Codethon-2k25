@@ -136,9 +136,9 @@ All colors MUST be HSL.
     margin: 0;
     padding: 0;
     background-image: 
-      radial-gradient(circle at 20% 80%, hsl(240 4.8% 95.9% / 0.3) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(221.2 83.2% 53.3% / 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 40% 40%, hsl(142 76% 36% / 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 20% 80%, hsl(240 4.8% 95.9% / 0.2) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(221.2 83.2% 53.3% / 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsl(142 76% 36% / 0.03) 0%, transparent 50%);
     background-attachment: fixed;
     background-size: 100% 100%;
     transition: background-color 0.3s ease, color 0.3s ease, background-image 0.3s ease;

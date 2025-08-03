@@ -6,25 +6,25 @@ import { QrCode, ExternalLink, Phone, Mail, User, Sparkles, Clock, CheckCircle }
 const Registration = () => {
   const contacts = [
     {
-      name: "Swapnil Gramopadhye",
+      name: "Prof. Swapnil Gramopadhye",
       phone: "+91 97667 03147",
-      email: "swapnil.gramopadhye@adcet.in",
+      email: "smg_cse@adcet.in",
       role: "Faculty Co-Ordinator",
       icon: User,
       gradient: "from-blue-500/20 to-blue-600/10"
     },
     {
-      name: "Prachi Pathak", 
+      name: "Prof. Prachi Pathak", 
       phone: "+91 91588 39366",
-      email: "prachi.pathak@adcet.in",
+      email: "psp_iot@adcet.in",
       role: "Faculty Co-Ordinator",
       icon: User,
       gradient: "from-purple-500/20 to-purple-600/10"
     },
     {
-      name: "Gaurav Kumbare",
+      name: "Mr. Gaurav Kumbhare",
       phone: "+91 77688 07185", 
-      email: "gaurav.kumbare@adcet.in",
+      email: "kumbharegaurav100@gmail.com",
       role: "Student Co-Ordinator",
       icon: User,
       gradient: "from-green-500/20 to-green-600/10"
@@ -41,15 +41,15 @@ const Registration = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Enhanced Header */}
         <div className="text-center mb-20 animate-slide-up">
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30 rounded-full px-6 py-3 text-accent-primary text-sm backdrop-blur-sm mb-8 hover:scale-105 transition-transform duration-300">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-full px-6 py-3 text-red-400 text-sm backdrop-blur-sm mb-8 hover:scale-105 transition-transform duration-300">
             <Clock className="w-5 h-5 animate-spin" />
-            <span className="font-medium">Registration Closing Soon</span>
-            <Badge variant="destructive" className="ml-2 animate-bounce">HOT</Badge>
+            <span className="font-medium">Registration Deadline: 07 Sep 25, 11:59 PM IST</span>
+            <Badge variant="destructive" className="ml-2 animate-bounce">URGENT</Badge>
           </div>
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
             <span className="font-mono bg-gradient-to-r from-accent-secondary to-accent-primary bg-clip-text text-transparent">Register</span> Now
           </h2>
-          <p className="text-xl text-neutral-400 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
             Secure your spot in this prestigious national-level coding competition
           </p>
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent-primary to-transparent mx-auto mt-8" />
@@ -69,7 +69,7 @@ const Registration = () => {
                 <CardTitle className="text-3xl font-light mb-6">
                   Join the <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent font-audiowide">Codathon</span>
                 </CardTitle>
-                <p className="text-lg text-neutral-300 font-light">
+                <p className="text-lg text-foreground/90 font-light">
                   Register through our official partner platform
                 </p>
               </CardHeader>
@@ -100,13 +100,13 @@ const Registration = () => {
                       variant="default" 
                       size="lg" 
                       className="relative w-full py-4 text-lg bg-gradient-to-r from-accent-primary to-accent-secondary hover:from-accent-primary/90 hover:to-accent-secondary/90 text-white font-medium rounded-xl transition-all duration-300 group-hover/btn:scale-105 shadow-xl"
-                      onClick={() => window.open('https://unstop.com/p/code-marathon-2k24-annasaheb-dange-college-of-engineering-and-technology-1151369', '_blank')}
+                      onClick={() => window.open('https://unstop.com/competitions/codathon-2k25-annasaheb-dange-college-of-engineering-and-technology-1151369', '_blank')}
                     >
                       <ExternalLink className="w-5 h-5 mr-3 group-hover/btn:scale-110 transition-transform duration-300" />
                       Register on Unstop
                     </Button>
                   </div>
-                  <p className="text-sm text-neutral-400">
+                  <p className="text-sm text-muted-foreground">
                     🔒 Quick, secure, and completely free registration
                   </p>
                 </div>
@@ -128,7 +128,7 @@ const Registration = () => {
                         <div className="w-8 h-8 rounded-xl bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30 text-accent-primary text-sm font-bold flex items-center justify-center group-hover/step:scale-110 transition-transform duration-200">
                           {index + 1}
                         </div>
-                        <p className="text-neutral-300 font-light group-hover/step:text-neutral-200 transition-colors duration-200">{step}</p>
+                        <p className="text-foreground/90 font-light group-hover/step:text-foreground transition-colors duration-200">{step}</p>
                       </div>
                     ))}
                   </div>
@@ -143,7 +143,7 @@ const Registration = () => {
               <h3 className="text-3xl font-semibold text-foreground mb-3">
                 Contact <span className="font-mono text-accent-primary bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">Information</span>
               </h3>
-              <p className="text-neutral-400 font-light">
+              <p className="text-muted-foreground font-light">
                 For inquiries and support, please reach out to our coordinators
               </p>
               <div className="w-20 h-0.5 bg-accent-primary mt-4 mx-auto lg:mx-0" />
@@ -162,7 +162,7 @@ const Registration = () => {
                         <h4 className="text-lg font-semibold text-foreground mb-1">
                           {contact.name}
                         </h4>
-                        <p className="text-sm text-neutral-400 mb-3 font-medium">
+                        <p className="text-sm text-muted-foreground mb-3 font-medium">
                           {contact.role}
                         </p>
                         <div className="space-y-2">
@@ -170,7 +170,7 @@ const Registration = () => {
                             <Phone className="w-4 h-4 text-accent-secondary" />
                             <a 
                               href={`tel:${contact.phone}`}
-                              className="text-neutral-300 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
+                              className="text-foreground/90 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
                             >
                               {contact.phone}
                             </a>
@@ -179,7 +179,7 @@ const Registration = () => {
                             <Mail className="w-4 h-4 text-accent-primary" />
                             <a 
                               href={`mailto:${contact.email}`}
-                              className="text-neutral-300 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
+                              className="text-foreground/90 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
                             >
                               {contact.email}
                             </a>
@@ -203,7 +203,7 @@ const Registration = () => {
                     <h4 className="text-lg font-semibold text-foreground mb-2">
                       Technical Support
                     </h4>
-                    <p className="text-neutral-300 font-light mb-4 leading-relaxed">
+                    <p className="text-foreground/90 font-light mb-4 leading-relaxed">
                       Our coordination team is available to assist with registration processes and provide guidance throughout the competition.
                     </p>
                     <div className="flex flex-wrap gap-2">
