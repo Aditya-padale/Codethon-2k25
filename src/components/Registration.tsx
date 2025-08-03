@@ -8,6 +8,7 @@ const Registration = () => {
     {
       name: "Swapnil Gramopadhye",
       phone: "+91 97667 03147",
+      email: "swapnil.gramopadhye@adcet.in",
       role: "Faculty Co-Ordinator",
       icon: User,
       gradient: "from-blue-500/20 to-blue-600/10"
@@ -15,13 +16,15 @@ const Registration = () => {
     {
       name: "Prachi Pathak", 
       phone: "+91 91588 39366",
+      email: "prachi.pathak@adcet.in",
       role: "Faculty Co-Ordinator",
       icon: User,
       gradient: "from-purple-500/20 to-purple-600/10"
     },
     {
-      name: "Unknown",
-      phone: "Unknown", 
+      name: "Student Coordinator",
+      phone: "Contact Faculty for Details", 
+      email: "student.coordinator@adcet.in",
       role: "Student Co-Ordinator",
       icon: User,
       gradient: "from-green-500/20 to-green-600/10"
@@ -134,80 +137,87 @@ const Registration = () => {
             </Card>
           </div>
 
-          {/* Enhanced Contact Information */}
-          <div className="space-y-8">
+          {/* Professional Contact Information */}
+          <div className="space-y-6">
             <div className="text-center lg:text-left">
-              <h3 className="text-3xl font-light text-foreground mb-4">
-                <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">Contact</span> Information
+              <h3 className="text-3xl font-semibold text-foreground mb-3">
+                Contact <span className="font-mono text-accent-primary bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">Information</span>
               </h3>
               <p className="text-neutral-400 font-light">
-                Need help? Reach out to our coordinators
+                For inquiries and support, please reach out to our coordinators
               </p>
-              <div className="w-16 h-px bg-gradient-to-r from-accent-primary to-transparent mt-4 mx-auto lg:mx-0" />
+              <div className="w-20 h-0.5 bg-accent-primary mt-4 mx-auto lg:mx-0" />
             </div>
             
             {contacts.map((contact, index) => {
               const IconComponent = contact.icon;
               return (
-                <div key={index} className="relative group">
-                  {/* Glow effect */}
-                  <div className={`absolute inset-0 bg-gradient-to-r ${contact.gradient} rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500`} />
-                  
-                  <Card className="relative bg-card/80 border border-border backdrop-blur-sm group-hover:border-accent-primary/30 transition-all duration-500 hover:scale-105">
-                    <CardContent className="p-8">
-                      <div className="flex items-center gap-6">
-                        <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${contact.gradient} border border-neutral-600/50 flex items-center justify-center group-hover:scale-110 transition-all duration-300 relative`}>
-                          <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${contact.gradient} blur-md opacity-50`} />
-                          <IconComponent className="w-8 h-8 text-accent-primary relative z-10 group-hover:rotate-12 transition-transform duration-300" />
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="text-xl font-medium text-foreground group-hover:text-accent-primary transition-colors duration-300">{contact.name}</h4>
-                          <p className="text-neutral-400 mb-3 font-light">{contact.role}</p>
-                          <div className="flex items-center gap-3">
-                            <div className="p-2 rounded-lg bg-accent-secondary/20 border border-accent-secondary/30">
-                              <Phone className="w-4 h-4 text-accent-secondary" />
-                            </div>
+                <Card key={index} className="bg-card border border-border hover:border-accent-primary/40 transition-colors duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 rounded-lg bg-accent-primary/10 border border-accent-primary/20 flex items-center justify-center flex-shrink-0">
+                        <IconComponent className="w-6 h-6 text-accent-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="text-lg font-semibold text-foreground mb-1">
+                          {contact.name}
+                        </h4>
+                        <p className="text-sm text-neutral-400 mb-3 font-medium">
+                          {contact.role}
+                        </p>
+                        <div className="space-y-2">
+                          <div className="flex items-center gap-2">
+                            <Phone className="w-4 h-4 text-accent-secondary" />
                             <a 
                               href={`tel:${contact.phone}`}
-                              className="text-neutral-300 hover:text-accent-primary transition-colors duration-300 font-medium group-hover:translate-x-1"
+                              className="text-neutral-300 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
                             >
                               {contact.phone}
                             </a>
                           </div>
+                          <div className="flex items-center gap-2">
+                            <Mail className="w-4 h-4 text-accent-primary" />
+                            <a 
+                              href={`mailto:${contact.email}`}
+                              className="text-neutral-300 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
+                            >
+                              {contact.email}
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </CardContent>
-                  </Card>
-                </div>
+                    </div>
+                  </CardContent>
+                </Card>
               );
             })}
 
-            {/* Enhanced Support Info */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-2xl blur-xl opacity-60 group-hover:opacity-100 transition-all duration-500" />
-              
-              <Card className="relative bg-card/90 border border-accent-primary/30 backdrop-blur-sm">
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="p-3 rounded-full bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30">
-                      <Mail className="w-6 h-6 text-accent-primary" />
-                    </div>
-                    <h4 className="text-xl font-medium text-foreground">Need Assistance?</h4>
+            {/* Professional Support Card */}
+            <Card className="bg-gradient-to-r from-accent-primary/5 to-accent-secondary/5 border border-accent-primary/20">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-2 rounded-lg bg-accent-primary/10 border border-accent-primary/20 flex-shrink-0">
+                    <Mail className="w-5 h-5 text-accent-primary" />
                   </div>
-                  <p className="text-neutral-300 font-light mb-6 leading-relaxed">
-                    Our coordinators are available to help with registration queries and provide technical support throughout the competition.
-                  </p>
-                  <div className="flex flex-wrap gap-3">
-                    <span className="text-sm bg-gradient-to-r from-accent-primary/20 to-accent-primary/10 text-accent-primary px-4 py-2 rounded-full border border-accent-primary/30">
-                      Registration Help
-                    </span>
-                    <span className="text-sm bg-gradient-to-r from-accent-secondary/20 to-accent-secondary/10 text-accent-secondary px-4 py-2 rounded-full border border-accent-secondary/30">
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground mb-2">
                       Technical Support
-                    </span>
+                    </h4>
+                    <p className="text-neutral-300 font-light mb-4 leading-relaxed">
+                      Our coordination team is available to assist with registration processes and provide guidance throughout the competition.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="text-xs bg-accent-primary/10 text-accent-primary px-3 py-1 rounded-full border border-accent-primary/20 font-medium">
+                        Registration Support
+                      </span>
+                      <span className="text-xs bg-accent-secondary/10 text-accent-secondary px-3 py-1 rounded-full border border-accent-secondary/20 font-medium">
+                        Technical Assistance
+                      </span>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
