@@ -22,9 +22,9 @@ const Registration = () => {
       gradient: "from-purple-500/20 to-purple-600/10"
     },
     {
-      name: "Student Coordinator",
-      phone: "Contact Faculty for Details", 
-      email: "student.coordinator@adcet.in",
+      name: "Gaurav Kumbare",
+      phone: "+91 77688 07185", 
+      email: "gaurav.kumbare@adcet.in",
       role: "Student Co-Ordinator",
       icon: User,
       gradient: "from-green-500/20 to-green-600/10"
