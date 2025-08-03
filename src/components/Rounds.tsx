@@ -9,8 +9,9 @@ const Rounds = () => {
       description: "Build your foundation",
       features: [
         "Online MCQ Test",
-        "Basic C++ concepts", 
-        "Non-elimination round"
+        "C, Python, Java concepts", 
+        "Top 120 qualify",
+        "13 Aug 25, 12:09 AM - 6:10 AM IST"
       ],
       color: "from-blue-500/20 to-blue-600/20",
       iconColor: "text-blue-400",
@@ -21,9 +22,10 @@ const Rounds = () => {
       icon: Sword,
       description: "Prove your skills",
       features: [
-        "Offline coding at campus",
+        "Offline coding at ADCET campus",
         "DSA and problem-solving",
-        "Qualifying round"
+        "Top 50 qualify for finals",
+        "15 Aug 25, 10:09 PM - 1:09 AM IST"
       ],
       color: "from-purple-500/20 to-purple-600/20",
       iconColor: "text-purple-400", 
@@ -34,9 +36,10 @@ const Rounds = () => {
       icon: Crown,
       description: "Claim your victory", 
       features: [
-        "Final coding round",
-        "Industry problems",
-        "Internship opportunity"
+        "Final round by CCTech",
+        "Industry-level problems",
+        "Internship opportunities",
+        "16 Aug 25, 2:09 AM - 5:09 AM IST"
       ],
       color: "from-amber-500/20 to-amber-600/20",
       iconColor: "text-amber-400",

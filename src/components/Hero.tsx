@@ -13,22 +13,25 @@ const Hero = () => {
       description: "The competition consists of 3 challenging rounds designed to test your coding skills progressively.",
       details: [
         {
-          round: "Round 1: Aptitude & Technical MCQs",
-          description: "Multiple choice questions covering programming fundamentals, data structures, algorithms, and logical reasoning.",
-          duration: "60 minutes",
-          type: "Screening Round"
+          round: "Round 1: Training Ground",
+          description: "Online MCQ based test on basic C, Python, Java and programming concepts. Top 120 participants qualify for Round 2.",
+          duration: "6 hours 1 minute (12:09 AM - 6:10 AM IST)",
+          type: "Online Screening Round",
+          date: "13 Aug 25"
         },
         {
-          round: "Round 2: Coding Challenge",
-          description: "Solve algorithmic problems using your preferred programming language. Test your problem-solving skills.",
-          duration: "90 minutes", 
-          type: "Programming Round"
+          round: "Round 2: Battle Arena",
+          description: "Offline coding round at ADCET campus focusing on DSA and problem-solving. Top 50 participants qualify for final round.",
+          duration: "3 hours (10:09 PM - 1:09 AM IST)", 
+          type: "Semi-Final Coding Round",
+          date: "15-16 Aug 25"
         },
         {
-          round: "Round 3: Final Coding Sprint",
-          description: "Advanced coding problems for qualified candidates. The ultimate test of your programming prowess.",
-          duration: "120 minutes",
-          type: "Final Round"
+          round: "Round 3: Victory Quest",
+          description: "Final coding round conducted and evaluated by CCTech with industry-based problem statements. Winners receive internship opportunities.",
+          duration: "3 hours (2:09 AM - 5:09 AM IST)",
+          type: "Final Round",
+          date: "16 Aug 25"
         }
       ]
     },
@@ -61,24 +64,24 @@ const Hero = () => {
       description: "The top performer will receive an exclusive internship opportunity with industry mentorship.",
       details: [
         {
-          benefit: "Paid Internship",
-          description: "3-6 months paid internship with leading tech companies or startups.",
-          value: "₹15,000 - ₹25,000/month"
+          benefit: "Internship cum Placement Opportunity",
+          description: "Exciting internship cum placement opportunity for top performers with mentorship from industry leaders.",
+          value: "Direct Industry Placement"
         },
         {
-          benefit: "Industry Mentorship",
-          description: "Direct guidance from experienced software engineers and tech leads.",
-          value: "1-on-1 sessions"
+          benefit: "Industry Mentorship & Training",
+          description: "Mentorship and training by industry leaders for winners with direct industry exposure.",
+          value: "Professional Guidance"
         },
         {
-          benefit: "Certificate & Recognition",
-          description: "Official completion certificate and LinkedIn recommendation.",
-          value: "Career boost"
+          benefit: "Participation Certificate",
+          description: "National-level participation certificate recognizing your coding expertise and competitive spirit.",
+          value: "Career Recognition"
         },
         {
-          benefit: "Network Access",
-          description: "Connect with alumni network and industry professionals.",
-          value: "Lifetime access"
+          benefit: "Industry Exposure",
+          description: "Direct exposure to real-world industry problems and networking opportunities with IT professionals.",
+          value: "Professional Network"
         }
       ]
     },
@@ -88,23 +91,23 @@ const Hero = () => {
       details: [
         {
           criteria: "Academic Standing",
-          description: "Must be currently enrolled in final year (4th year) of B.Tech program.",
-          requirement: "Final Year B.Tech"
+          description: "Must be currently enrolled in final year (4th year) of B.Tech program graduating in 2026.",
+          requirement: "B Tech Final Year (2026 Graduates)"
         },
         {
-          criteria: "Branch Eligibility", 
-          description: "Open to all engineering branches - CSE, IT, ECE, EEE, Mechanical, Civil, etc.",
-          requirement: "All Branches Welcome"
+          criteria: "Participation Mode", 
+          description: "Only individual participation is allowed. Team registrations are not permitted.",
+          requirement: "Individual Participation Only"
         },
         {
           criteria: "Programming Knowledge",
-          description: "Basic understanding of at least one programming language (C/Python/Java).",
-          requirement: "Fundamental Coding Skills"
+          description: "Basic understanding of C, Python, and Java programming languages with DSA fundamentals.",
+          requirement: "C/Python/Java Proficiency"
         },
         {
-          criteria: "Registration",
-          description: "Must register through official Unstop platform before the deadline.",
-          requirement: "Valid Registration"
+          criteria: "Registration Deadline",
+          description: "Must register through official Unstop platform before 07 Sep 25, 11:59 PM IST.",
+          requirement: "Register by 07 Sep 25"
         }
       ]
     }

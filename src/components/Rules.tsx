@@ -8,28 +8,29 @@ const Rules = () => {
       icon: Users,
       color: "accent-primary",
       rules: [
-        "Only B.Tech final year students",
-        "Individual participation only"
+        "Only B.Tech students graduating in 2026",
+        "Individual participation only",
+        "All engineering branches eligible"
       ]
     },
     {
-      category: "Format",
+      category: "Round Structure",
       icon: Monitor,
       color: "accent-secondary", 
       rules: [
-        "Round I: Online MCQ (Non-elimination)",
-        "Round II: Offline Coding (Elimination)",
-        "Round III: Final Assessment"
+        "Round I: Online MCQ Test (120 qualify)",
+        "Round II: Offline Coding (50 qualify)",
+        "Round III: Industry Problems by CCTech"
       ]
     },
     {
-      category: "Important",
+      category: "Important Rules",
       icon: AlertCircle,
       color: "red-400",
       rules: [
-        "Absence in Round I = Disqualification",
-        "All Round I participants advance",
-        "Industry-level problems from CCTech"
+        "Absence in Round I = Elimination",
+        "Round II & III conducted offline",
+        "Registration deadline: 07 Sep 25"
       ]
     },
     {
@@ -37,8 +38,9 @@ const Rules = () => {
       icon: Trophy,
       color: "yellow-400",
       rules: [
-        "Winners get CCTech internship",
-        "Professional certification"
+        "Internship cum placement opportunity",
+        "Industry mentorship for winners",
+        "National-level certificates"
       ]
     }
   ];

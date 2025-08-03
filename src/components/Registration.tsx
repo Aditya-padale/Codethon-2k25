@@ -6,25 +6,25 @@ import { QrCode, ExternalLink, Phone, Mail, User, Sparkles, Clock, CheckCircle }
 const Registration = () => {
   const contacts = [
     {
-      name: "Swapnil Gramopadhye",
+      name: "Prof. Swapnil Gramopadhye",
       phone: "+91 97667 03147",
-      email: "swapnil.gramopadhye@adcet.in",
+      email: "smg_cse@adcet.in",
       role: "Faculty Co-Ordinator",
       icon: User,
       gradient: "from-blue-500/20 to-blue-600/10"
     },
     {
-      name: "Prachi Pathak", 
+      name: "Prof. Prachi Pathak", 
       phone: "+91 91588 39366",
-      email: "prachi.pathak@adcet.in",
+      email: "psp_iot@adcet.in",
       role: "Faculty Co-Ordinator",
       icon: User,
       gradient: "from-purple-500/20 to-purple-600/10"
     },
     {
-      name: "Gaurav Kumbare",
+      name: "Mr. Gaurav Kumbhare",
       phone: "+91 77688 07185", 
-      email: "gaurav.kumbare@adcet.in",
+      email: "kumbharegaurav100@gmail.com",
       role: "Student Co-Ordinator",
       icon: User,
       gradient: "from-green-500/20 to-green-600/10"
@@ -41,10 +41,10 @@ const Registration = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Enhanced Header */}
         <div className="text-center mb-20 animate-slide-up">
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30 rounded-full px-6 py-3 text-accent-primary text-sm backdrop-blur-sm mb-8 hover:scale-105 transition-transform duration-300">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-full px-6 py-3 text-red-400 text-sm backdrop-blur-sm mb-8 hover:scale-105 transition-transform duration-300">
             <Clock className="w-5 h-5 animate-spin" />
-            <span className="font-medium">Registration Closing Soon</span>
-            <Badge variant="destructive" className="ml-2 animate-bounce">HOT</Badge>
+            <span className="font-medium">Registration Deadline: 07 Sep 25, 11:59 PM IST</span>
+            <Badge variant="destructive" className="ml-2 animate-bounce">URGENT</Badge>
           </div>
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
             <span className="font-mono bg-gradient-to-r from-accent-secondary to-accent-primary bg-clip-text text-transparent">Register</span> Now
@@ -100,7 +100,7 @@ const Registration = () => {
                       variant="default" 
                       size="lg" 
                       className="relative w-full py-4 text-lg bg-gradient-to-r from-accent-primary to-accent-secondary hover:from-accent-primary/90 hover:to-accent-secondary/90 text-white font-medium rounded-xl transition-all duration-300 group-hover/btn:scale-105 shadow-xl"
-                      onClick={() => window.open('https://unstop.com/p/code-marathon-2k24-annasaheb-dange-college-of-engineering-and-technology-1151369', '_blank')}
+                      onClick={() => window.open('https://unstop.com/competitions/codathon-2k25-annasaheb-dange-college-of-engineering-and-technology-1151369', '_blank')}
                     >
                       <ExternalLink className="w-5 h-5 mr-3 group-hover/btn:scale-110 transition-transform duration-300" />
                       Register on Unstop

@@ -5,49 +5,49 @@ const Benefits = () => {
   const benefits = [
     {
       icon: Briefcase,
-      title: "Internship Opportunity",
-      description: "Winner receives guaranteed internship from industry partner",
+      title: "Internship cum Placement",
+      description: "Exciting internship cum placement opportunity for top performers with direct industry connection",
       gradient: "from-blue-500/20 to-blue-600/10",
       iconColor: "text-blue-400"
     },
     {
       icon: Building,
-      title: "Industry Exposure", 
-      description: "Real-world insights and professional networking opportunities",
+      title: "Industry Mentorship", 
+      description: "Mentorship and training by industry leaders providing real-world professional guidance",
       gradient: "from-purple-500/20 to-purple-600/10",
       iconColor: "text-purple-400"
     },
     {
       icon: Award,
-      title: "National Recognition",
-      description: "Pan-India acknowledgment for coding excellence",
+      title: "Industry Exposure",
+      description: "Direct exposure to industry-level problems and professional development opportunities",
       gradient: "from-amber-500/20 to-amber-600/10", 
       iconColor: "text-amber-400"
     },
     {
       icon: Star,
-      title: "Certification",
-      description: "National level participation certificate for portfolio",
+      title: "National-Level Certificate",
+      description: "Official national-level participation certificate enhancing your professional portfolio",
       gradient: "from-green-500/20 to-green-600/10",
       iconColor: "text-green-400"
     },
     {
       icon: Zap,
-      title: "Skill Enhancement",
-      description: "Advanced problem-solving and algorithmic thinking",
+      title: "Skills Development",
+      description: "Advanced DSA skills, problem-solving abilities, and competitive programming expertise",
       gradient: "from-orange-500/20 to-orange-600/10",
       iconColor: "text-orange-400"
     },
     {
       icon: Users,
-      title: "Network Building",
-      description: "Connect with peers and industry professionals",
+      title: "Professional Network",
+      description: "Connect with industry professionals, mentors, and like-minded coding enthusiasts",
       gradient: "from-pink-500/20 to-pink-600/10",
       iconColor: "text-pink-400"
     },
     {
       icon: TrendingUp,
-      title: "Career Advancement",
+      title: "Career Boost",
       description: "Competitive programming experience for resume",
       gradient: "from-cyan-500/20 to-cyan-600/10",
       iconColor: "text-cyan-400"
