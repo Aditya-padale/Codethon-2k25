@@ -1,9 +1,115 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Trophy, Users, Code, ArrowRight, Sparkles, Cpu, Terminal, ChevronDown } from "lucide-react";
+import { Calendar, Trophy, Users, Code, ArrowRight, Sparkles, Cpu, Terminal, ChevronDown, X } from "lucide-react";
 import LogoImage from "@/img/logo.png";
 import RightLogoImage from "@/img/right logo.png";
+import { useState } from "react";
 
 const Hero = () => {
+  const [selectedCard, setSelectedCard] = useState<string | null>(null);
+
+  const cardDetails = {
+    rounds: {
+      title: "Competition Rounds",
+      description: "The competition consists of 3 challenging rounds designed to test your coding skills progressively.",
+      details: [
+        {
+          round: "Round 1: Aptitude & Technical MCQs",
+          description: "Multiple choice questions covering programming fundamentals, data structures, algorithms, and logical reasoning.",
+          duration: "60 minutes",
+          type: "Screening Round"
+        },
+        {
+          round: "Round 2: Coding Challenge",
+          description: "Solve algorithmic problems using your preferred programming language. Test your problem-solving skills.",
+          duration: "90 minutes", 
+          type: "Programming Round"
+        },
+        {
+          round: "Round 3: Final Coding Sprint",
+          description: "Advanced coding problems for qualified candidates. The ultimate test of your programming prowess.",
+          duration: "120 minutes",
+          type: "Final Round"
+        }
+      ]
+    },
+    languages: {
+      title: "Programming Languages",
+      description: "Choose your weapon! Code in any of these popular programming languages.",
+      details: [
+        {
+          language: "C Programming",
+          description: "The foundational language that powers system programming and competitive coding.",
+          features: ["Fast execution", "Memory control", "System programming"],
+          difficulty: "Beginner to Advanced"
+        },
+        {
+          language: "Python",
+          description: "Versatile and readable language perfect for rapid prototyping and algorithm implementation.",
+          features: ["Easy syntax", "Rich libraries", "Quick development"],
+          difficulty: "Beginner to Advanced"
+        },
+        {
+          language: "Java",
+          description: "Object-oriented powerhouse used in enterprise applications and competitive programming.",
+          features: ["Platform independent", "Strong OOP", "Robust ecosystem"],
+          difficulty: "Intermediate to Advanced"
+        }
+      ]
+    },
+    internship: {
+      title: "Winner Internship Program",
+      description: "The top performer will receive an exclusive internship opportunity with industry mentorship.",
+      details: [
+        {
+          benefit: "Paid Internship",
+          description: "3-6 months paid internship with leading tech companies or startups.",
+          value: "₹15,000 - ₹25,000/month"
+        },
+        {
+          benefit: "Industry Mentorship",
+          description: "Direct guidance from experienced software engineers and tech leads.",
+          value: "1-on-1 sessions"
+        },
+        {
+          benefit: "Certificate & Recognition",
+          description: "Official completion certificate and LinkedIn recommendation.",
+          value: "Career boost"
+        },
+        {
+          benefit: "Network Access",
+          description: "Connect with alumni network and industry professionals.",
+          value: "Lifetime access"
+        }
+      ]
+    },
+    eligibility: {
+      title: "Eligibility Criteria",
+      description: "This competition is exclusively designed for final year B.Tech students.",
+      details: [
+        {
+          criteria: "Academic Standing",
+          description: "Must be currently enrolled in final year (4th year) of B.Tech program.",
+          requirement: "Final Year B.Tech"
+        },
+        {
+          criteria: "Branch Eligibility", 
+          description: "Open to all engineering branches - CSE, IT, ECE, EEE, Mechanical, Civil, etc.",
+          requirement: "All Branches Welcome"
+        },
+        {
+          criteria: "Programming Knowledge",
+          description: "Basic understanding of at least one programming language (C/Python/Java).",
+          requirement: "Fundamental Coding Skills"
+        },
+        {
+          criteria: "Registration",
+          description: "Must register through official Unstop platform before the deadline.",
+          requirement: "Valid Registration"
+        }
+      ]
+    }
+  };
+
   const scrollToNextSection = () => {
     const nextSection = document.querySelector('#institute-journey');
     if (nextSection) {
@@ -156,7 +262,7 @@ const Hero = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto pt-4 px-4">
-            <div className="group relative">
+            <div className="group relative cursor-pointer" onClick={() => setSelectedCard('rounds')}>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
               <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105">
                 <Calendar className="w-6 h-6 md:w-8 md:h-8 text-accent-primary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
@@ -165,7 +271,7 @@ const Hero = () => {
               </div>
             </div>
             
-            <div className="group relative">
+            <div className="group relative cursor-pointer" onClick={() => setSelectedCard('languages')}>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
               <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
                 <Code className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
@@ -174,7 +280,7 @@ const Hero = () => {
               </div>
             </div>
             
-            <div className="group relative">
+            <div className="group relative cursor-pointer" onClick={() => setSelectedCard('internship')}>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
               <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105">
                 <Trophy className="w-6 h-6 md:w-8 md:h-8 text-accent-primary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
@@ -183,7 +289,7 @@ const Hero = () => {
               </div>
             </div>
             
-            <div className="group relative">
+            <div className="group relative cursor-pointer" onClick={() => setSelectedCard('eligibility')}>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
               <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105">
                 <Users className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
@@ -222,6 +328,138 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      {/* Modal for Card Details */}
+      {selectedCard && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto scrollbar-hide">
+            {/* Fixed Floating Close Button */}
+            <button
+              onClick={() => setSelectedCard(null)}
+              className="fixed top-6 right-6 p-3 rounded-full bg-background/90 hover:bg-background border-2 border-border hover:border-accent-primary/50 transition-all duration-200 z-[60] shadow-lg backdrop-blur-sm"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            <div className="p-6 md:p-8">
+              {/* Modal Header */}
+              <div className="mb-8">
+                <h2 className="text-3xl md:text-4xl font-light text-foreground mb-3">
+                  {cardDetails[selectedCard as keyof typeof cardDetails].title}
+                </h2>
+                <p className="text-muted-foreground text-lg font-light leading-relaxed">
+                  {cardDetails[selectedCard as keyof typeof cardDetails].description}
+                </p>
+              </div>
+
+              {/* Modal Content */}
+              <div className="space-y-6">
+                {selectedCard === 'rounds' && (
+                  <div className="grid gap-6">
+                    {cardDetails.rounds.details.map((round, index) => (
+                      <div key={index} className="group relative">
+                        <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+                        <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-[1.02]">
+                          <div className="flex items-start justify-between mb-4">
+                            <h3 className="text-xl font-light text-foreground">{round.round}</h3>
+                            <span className="px-3 py-1 text-xs bg-accent-primary/20 text-accent-primary rounded-full font-medium uppercase tracking-wider">
+                              {round.type}
+                            </span>
+                          </div>
+                          <p className="text-muted-foreground font-light leading-relaxed mb-4">{round.description}</p>
+                          <div className="flex items-center gap-4 text-sm text-accent-secondary font-light">
+                            <span>⏱️ Duration: {round.duration}</span>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {selectedCard === 'languages' && (
+                  <div className="grid gap-6">
+                    {cardDetails.languages.details.map((lang, index) => (
+                      <div key={index} className="group relative">
+                        <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+                        <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-[1.02]">
+                          <div className="flex items-start justify-between mb-4">
+                            <h3 className="text-xl font-light text-foreground">{lang.language}</h3>
+                            <span className="px-3 py-1 text-xs bg-accent-secondary/20 text-accent-secondary rounded-full font-medium uppercase tracking-wider">
+                              {lang.difficulty}
+                            </span>
+                          </div>
+                          <p className="text-muted-foreground font-light leading-relaxed mb-4">{lang.description}</p>
+                          <div className="flex flex-wrap gap-2">
+                            {lang.features.map((feature, idx) => (
+                              <span key={idx} className="px-3 py-1 text-xs bg-muted/50 text-muted-foreground rounded-full font-light">
+                                {feature}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {selectedCard === 'internship' && (
+                  <div className="grid gap-6">
+                    {cardDetails.internship.details.map((benefit, index) => (
+                      <div key={index} className="group relative">
+                        <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+                        <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-[1.02]">
+                          <div className="flex items-start justify-between mb-4">
+                            <h3 className="text-xl font-light text-foreground">{benefit.benefit}</h3>
+                            <span className="px-3 py-1 text-xs bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-400 rounded-full font-medium uppercase tracking-wider">
+                              {benefit.value}
+                            </span>
+                          </div>
+                          <p className="text-muted-foreground font-light leading-relaxed">{benefit.description}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {selectedCard === 'eligibility' && (
+                  <div className="grid gap-6">
+                    {cardDetails.eligibility.details.map((criteria, index) => (
+                      <div key={index} className="group relative">
+                        <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+                        <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-[1.02]">
+                          <div className="flex items-start justify-between mb-4">
+                            <h3 className="text-xl font-light text-foreground">{criteria.criteria}</h3>
+                            <span className="px-3 py-1 text-xs bg-gradient-to-r from-blue-500/20 to-cyan-500/20 text-blue-400 rounded-full font-medium uppercase tracking-wider">
+                              {criteria.requirement}
+                            </span>
+                          </div>
+                          <p className="text-muted-foreground font-light leading-relaxed">{criteria.description}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Modal Footer */}
+              <div className="mt-8 pt-6 border-t border-border">
+                <div className="flex justify-center">
+                  <div className="relative group">
+                    <div className="absolute inset-0 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-70" />
+                    <Button
+                      onClick={() => window.open('https://unstop.com/p/code-marathon-2k24-annasaheb-dange-college-of-engineering-and-technology-1151369', '_blank')}
+                      className="relative px-10 py-4 bg-gradient-to-r from-accent-primary to-accent-secondary hover:from-accent-primary/90 hover:to-accent-secondary/90 text-white font-medium text-lg rounded-xl transition-all duration-300 group-hover:scale-105 shadow-xl"
+                    >
+                      Register for Competition
+                      <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
       
       {/* Enhanced decorative elements */}
       <div className="absolute top-1/4 right-10 w-px h-32 bg-gradient-to-b from-transparent via-accent-primary/30 to-transparent animate-float"></div>

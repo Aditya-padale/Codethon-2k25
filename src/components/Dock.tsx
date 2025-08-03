@@ -58,7 +58,7 @@ const Dock = () => {
             className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
             asChild
           >
-            <a href="https://instagram.com/adcet_official" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/adcet_ashta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
               <Instagram className="size-4" />
             </a>
           </Button>
@@ -72,7 +72,7 @@ const Dock = () => {
             className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
             asChild
           >
-            <a href="https://facebook.com/adcet.official" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/groups/adcetadmin/?ref=share&mibextid=NSMWBT" target="_blank" rel="noopener noreferrer">
               <Facebook className="size-4" />
             </a>
           </Button>
@@ -86,7 +86,7 @@ const Dock = () => {
             className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
             asChild
           >
-            <a href="https://linkedin.com/school/adcet" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/school/annasaheb-dange-college-of-engineering-and-technology-ashta/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="size-4" />
             </a>
           </Button>
