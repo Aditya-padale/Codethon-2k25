@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, Award, GraduationCap, Building, Users, Trophy, Star, Sparkles, MapPin, BookOpen, Target, Zap, Rocket, Code, Cpu, ArrowRight, TrendingUp, ArrowLeft } from "lucide-react";
+import { Calendar, Award, GraduationCap, Building, Users, Trophy, Star, Sparkles, MapPin, BookOpen, Target, Zap, Rocket, Code, Cpu, ArrowRight, TrendingUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import LogoImage from "@/img/logo.png";
+import Dock from "@/components/Dock";
 
 const CollegeInfo = () => {
   const navigate = useNavigate();
@@ -201,15 +203,82 @@ const CollegeInfo = () => {
       
       <div className="container mx-auto px-6 relative z-10 py-16">
         
-        {/* Back Button */}
-        <div className="mb-8">
-          <button 
-            onClick={() => navigate('/')}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30 rounded-full text-accent-primary hover:scale-105 transition-all duration-300 group"
-          >
-            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-300" />
-            <span>Back to Home</span>
-          </button>
+        {/* College Header Section */}
+        <div className="relative max-w-5xl mx-auto mb-16">
+          <div className="relative group">
+            {/* Background container with gradient */}
+            <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-xl px-4 md:px-6 py-3 md:py-4 hover:border-accent-primary/30 transition-all duration-300 overflow-hidden">
+              
+              {/* Top and bottom accent lines */}
+              <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary"></div>
+              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-accent-secondary via-accent-primary to-accent-secondary"></div>
+
+              {/* Main content - responsive layout */}
+              <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+                
+                {/* Logo */}
+                <div className="relative flex-shrink-0">
+                  <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-full blur-xl"></div>
+                  <div className="relative w-16 h-16 md:w-24 md:h-24 bg-background border-2 border-accent-primary/40 hover:border-accent-primary/70 transition-all duration-300 shadow-lg rounded-full p-2 md:p-3">
+                    <img 
+                      src={LogoImage} 
+                      alt="ADCET Logo" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+                
+                {/* College Information - Mobile View */}
+                <div className="text-center flex-1 md:hidden">
+                  <h3 className="text-red-400 text-xs font-medium mb-1">
+                    Sant Dnyaneshwar Shikshan Sanstha's
+                  </h3>
+                  <h2 className="text-red-500 text-sm font-bold mb-1 leading-tight">
+                    Annasaheb Dange College of Engineering and Technology (ADCET), Ashta
+                  </h2>
+                  <p className="text-muted-foreground text-xs mb-1 leading-relaxed">
+                    An Empowered Autonomous Institute, affiliated to Shivaji University, Kolhapur
+                  </p>
+                </div>
+
+                {/* College Information - Desktop View */}
+                <div className="text-center flex-1 hidden md:block">
+                  <h3 className="text-red-400 text-base font-medium mb-1">
+                    Sant Dnyaneshwar Shikshan Sanstha's
+                  </h3>
+                  <h2 className="text-red-500 text-lg font-bold mb-2 leading-tight">
+                    Annasaheb Dange College of Engineering and Technology (ADCET), Ashta
+                  </h2>
+                  <p className="text-muted-foreground text-sm mb-1 leading-relaxed">
+                    An Empowered Autonomous Institute, affiliated to Shivaji University, Kolhapur
+                  </p>
+                  <p className="text-muted-foreground text-sm mb-1">
+                    Approved by AICTE, New Delhi & Govt. of Maharashtra
+                  </p>
+                  <div className="flex flex-row justify-center items-center gap-4 mt-2">
+                    <p className="text-muted-foreground/80 text-xs">
+                      Accredited by NAAC 'A+' Grade, Bangalore
+                    </p>
+                    <span className="text-muted-foreground/60">•</span>
+                    <p className="text-accent-secondary text-xs font-medium">
+                      Eligible Programs Accredited by NBA, New Delhi
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Subtle background pattern */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute top-4 left-4 w-1 h-1 bg-accent-primary rounded-full"></div>
+                <div className="absolute top-8 right-8 w-1 h-1 bg-accent-secondary rounded-full"></div>
+                <div className="absolute bottom-8 left-8 w-1 h-1 bg-accent-primary rounded-full"></div>
+                <div className="absolute bottom-4 right-4 w-1 h-1 bg-accent-secondary rounded-full"></div>
+              </div>
+
+              {/* Glow effect */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary/5 to-accent-secondary/5 rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+            </div>
+          </div>
         </div>
 
         {/* Enhanced Header */}
@@ -560,6 +629,8 @@ const CollegeInfo = () => {
           </Card>
         </div>
       </div>
+
+      <Dock />
     </div>
   );
 };

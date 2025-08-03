@@ -139,9 +139,15 @@ const Rules = () => {
 
           {/* Competition Flow */}
           <div className="mt-12">
-            <h3 className="text-2xl font-bold text-center text-foreground mb-8">
-              Competition Flow
-            </h3>
+            <div className="text-center mb-16">
+              <h3 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
+                Competition <span className="font-mono text-accent-primary bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">Flow</span>
+              </h3>
+              <p className="text-xl text-neutral-400 max-w-3xl mx-auto font-light leading-relaxed">
+                Your journey through the three-round competition process
+              </p>
+              <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent-primary to-transparent mx-auto mt-8" />
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card className="text-center border-2 border-green-500/30 bg-green-500/5">
                 <CardContent className="py-8">

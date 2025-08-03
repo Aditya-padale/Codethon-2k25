@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto space-y-12 animate-fade-in">
           {/* Custom Header Design */}
-          <div className="relative max-w-4xl mx-auto mb-8">
+          <div className="relative max-w-4xl mx-auto mb-8 mt-8 md:mt-12">
             <div className="relative group">
               {/* Background container with gradient */}
               <div className="relative bg-card/95 backdrop-blur-sm border border-border rounded-xl px-4 md:px-6 py-3 md:py-4 hover:border-accent-primary/30 transition-all duration-300 overflow-hidden">

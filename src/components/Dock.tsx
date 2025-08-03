@@ -4,8 +4,9 @@ import { Separator } from "@/components/ui/separator";
 import { useTheme } from "@/components/ThemeProvider";
 import { 
   Home, 
-  NotebookPen, 
-  Github, 
+  GraduationCap, 
+  Instagram, 
+  Facebook, 
   Linkedin, 
   Sun, 
   Moon
@@ -32,7 +33,7 @@ const Dock = () => {
           </Button>
         </div>
 
-        {/* Blog Button */}
+        {/* About College Button */}
         <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
           <Button
             variant="ghost"
@@ -40,8 +41,8 @@ const Dock = () => {
             className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
             asChild
           >
-            <a href="/blog">
-              <NotebookPen className="size-4" />
+            <a href="/college-info">
+              <GraduationCap className="size-4" />
             </a>
           </Button>
         </div>
@@ -49,7 +50,7 @@ const Dock = () => {
         {/* Separator */}
         <Separator orientation="vertical" className="h-full mx-2" />
 
-        {/* GitHub Button */}
+        {/* Instagram Button */}
         <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
           <Button
             variant="ghost"
@@ -57,8 +58,22 @@ const Dock = () => {
             className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
             asChild
           >
-            <a href="https://github.com/JagjeevanAK" target="_blank" rel="noopener noreferrer">
-              <Github className="size-4" />
+            <a href="https://instagram.com/adcet_official" target="_blank" rel="noopener noreferrer">
+              <Instagram className="size-4" />
+            </a>
+          </Button>
+        </div>
+
+        {/* Facebook Button */}
+        <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
+            asChild
+          >
+            <a href="https://facebook.com/adcet.official" target="_blank" rel="noopener noreferrer">
+              <Facebook className="size-4" />
             </a>
           </Button>
         </div>
@@ -71,25 +86,8 @@ const Dock = () => {
             className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
             asChild
           >
-            <a href="https://www.linkedin.com/in/jagjeevankashid/" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/school/adcet" target="_blank" rel="noopener noreferrer">
               <Linkedin className="size-4" />
-            </a>
-          </Button>
-        </div>
-
-        {/* X/Twitter Button */}
-        <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
-            asChild
-          >
-            <a href="https://x.com/KashidJagjeevan" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="size-4">
-                <title>X</title>
-                <path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
-              </svg>
             </a>
           </Button>
         </div>
