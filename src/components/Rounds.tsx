@@ -62,7 +62,7 @@ const Rounds = () => {
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
             Competition <span className="font-mono text-accent-primary bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">Rounds</span>
           </h2>
-          <p className="text-xl text-neutral-400 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
             Three carefully crafted stages designed to test and enhance your coding abilities
           </p>
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent-primary to-transparent mx-auto mt-8" />
@@ -93,7 +93,7 @@ const Rounds = () => {
                     <CardTitle className="text-2xl font-medium text-foreground mb-3 group-hover:text-accent-primary transition-colors duration-300">
                       {round.title}
                     </CardTitle>
-                    <p className="text-neutral-400 font-light text-lg">
+                    <p className="text-muted-foreground font-light text-lg">
                       {round.description}
                     </p>
                   </CardHeader>
@@ -104,7 +104,7 @@ const Rounds = () => {
                         <div className="flex-shrink-0">
                           <ChevronRight className="w-4 h-4 text-accent-secondary group-hover/item:text-accent-primary transition-colors duration-200" />
                         </div>
-                        <p className="text-neutral-300 font-light group-hover/item:text-neutral-200 transition-colors duration-200">
+                        <p className="text-muted-foreground font-light group-hover/item:text-foreground/90 transition-colors duration-200">
                           {feature}
                         </p>
                       </div>
@@ -123,9 +123,9 @@ const Rounds = () => {
         <div className="text-center">
           <div className="relative group">
             {/* Glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-all duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-3xl blur-2xl opacity-50 dark:opacity-60 group-hover:opacity-75 dark:group-hover:opacity-100 transition-all duration-500" />
             
-            <Card className="relative max-w-5xl mx-auto bg-card/90 border border-accent-primary/30 backdrop-blur-sm group-hover:border-accent-primary/50 transition-all duration-500 overflow-hidden">
+            <Card className="relative max-w-5xl mx-auto bg-card/95 border border-accent-primary/30 backdrop-blur-sm group-hover:border-accent-primary/50 transition-all duration-500 overflow-hidden shadow-lg">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary"></div>
               
               <CardContent className="py-12 px-8">
@@ -139,7 +139,7 @@ const Rounds = () => {
                   </div>
                 </div>
                 
-                <p className="text-lg text-neutral-300 mb-12 font-light max-w-2xl mx-auto leading-relaxed">
+                <p className="text-lg text-muted-foreground mb-12 font-light max-w-2xl mx-auto leading-relaxed">
                   Your path to success through three carefully designed stages
                 </p>
                 
@@ -152,8 +152,8 @@ const Rounds = () => {
                         <Monitor className="w-8 h-8 text-blue-400 group-hover/item:scale-110 transition-transform duration-300" />
                       </div>
                     </div>
-                    <span className="text-neutral-300 font-medium group-hover/item:text-blue-400 transition-colors duration-300">Online Test</span>
-                    <span className="text-xs text-neutral-500 mt-1">MCQ Round</span>
+                    <span className="text-foreground/90 font-medium group-hover/item:text-blue-400 transition-colors duration-300">Online Test</span>
+                    <span className="text-xs text-muted-foreground/80 mt-1">MCQ Round</span>
                   </div>
                   
                   {/* Arrow 1 */}
@@ -171,8 +171,8 @@ const Rounds = () => {
                         <Code2 className="w-8 h-8 text-purple-400 group-hover/item:scale-110 transition-transform duration-300" />
                       </div>
                     </div>
-                    <span className="text-neutral-300 font-medium group-hover/item:text-purple-400 transition-colors duration-300">Campus Coding</span>
-                    <span className="text-xs text-neutral-500 mt-1">DSA Challenge</span>
+                    <span className="text-foreground/90 font-medium group-hover/item:text-purple-400 transition-colors duration-300">Campus Coding</span>
+                    <span className="text-xs text-muted-foreground/80 mt-1">DSA Challenge</span>
                   </div>
                   
                   {/* Arrow 2 */}
@@ -190,14 +190,14 @@ const Rounds = () => {
                         <Trophy className="w-8 h-8 text-amber-400 group-hover/item:scale-110 group-hover/item:rotate-12 transition-all duration-300" />
                       </div>
                     </div>
-                    <span className="text-neutral-300 font-medium group-hover/item:text-amber-400 transition-colors duration-300">Final Victory</span>
-                    <span className="text-xs text-neutral-500 mt-1">Win Internship</span>
+                    <span className="text-foreground/90 font-medium group-hover/item:text-amber-400 transition-colors duration-300">Final Victory</span>
+                    <span className="text-xs text-muted-foreground/80 mt-1">Win Internship</span>
                   </div>
                 </div>
                 
                 {/* Bottom accent */}
-                <div className="pt-8 mt-8 border-t border-neutral-700/30">
-                  <p className="text-sm text-neutral-400 font-light">
+                <div className="pt-8 mt-8 border-t border-border">
+                  <p className="text-sm text-muted-foreground font-light">
                     Progress through each stage to unlock amazing opportunities
                   </p>
                 </div>

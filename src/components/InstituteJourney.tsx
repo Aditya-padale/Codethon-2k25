@@ -66,9 +66,9 @@ const InstituteJourney = () => {
 
         {/* Enhanced About Section */}
         <div className="mb-24 relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-3xl blur-2xl opacity-60"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-3xl blur-2xl opacity-50 dark:opacity-60"></div>
           
-          <Card className="relative max-w-6xl mx-auto bg-card/90 border border-accent-primary/30 backdrop-blur-sm overflow-hidden">
+          <Card className="relative max-w-6xl mx-auto bg-card/98 border border-accent-primary/30 backdrop-blur-sm overflow-hidden shadow-xl">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary"></div>
             
             <CardHeader className="text-center pt-12 pb-8">
@@ -88,11 +88,11 @@ const InstituteJourney = () => {
             <CardContent className="px-12 pb-12">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                  <p className="text-lg text-neutral-300 leading-relaxed font-light">
+                  <p className="text-lg text-foreground/90 leading-relaxed font-light">
                     The <span className="text-accent-primary font-medium">Annasaheb Dange College of Engineering and Technology (ADCET)</span> stands as a beacon of 
                     excellence in Western Maharashtra, transforming ambitious minds into skilled engineers who drive innovation and progress.
                   </p>
-                  <p className="text-neutral-400 leading-relaxed font-light">
+                  <p className="text-muted-foreground leading-relaxed font-light">
                     Since 1999, we've maintained our commitment to academic excellence, research innovation, and holistic development, 
                     earning recognition as an <span className="text-accent-secondary font-medium">Autonomous Institute</span> affiliated with Shivaji University, Kolhapur.
                   </p>
@@ -110,25 +110,25 @@ const InstituteJourney = () => {
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gradient-to-br from-accent-primary/20 to-accent-primary/10 border border-accent-primary/30 rounded-2xl p-6 text-center group hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-br from-accent-primary/30 to-accent-primary/20 dark:from-accent-primary/20 dark:to-accent-primary/10 border border-accent-primary/40 dark:border-accent-primary/30 rounded-2xl p-6 text-center group hover:scale-105 transition-transform duration-300 shadow-md">
                     <Award className="w-8 h-8 text-accent-primary mx-auto mb-3 group-hover:rotate-12 transition-transform duration-300" />
                     <div className="text-sm font-medium text-accent-primary">NAAC A++</div>
-                    <div className="text-xs text-neutral-400 mt-1">Accredited</div>
+                    <div className="text-xs text-muted-foreground mt-1">Accredited</div>
                   </div>
-                  <div className="bg-gradient-to-br from-accent-secondary/20 to-accent-secondary/10 border border-accent-secondary/30 rounded-2xl p-6 text-center group hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-br from-accent-secondary/30 to-accent-secondary/20 dark:from-accent-secondary/20 dark:to-accent-secondary/10 border border-accent-secondary/40 dark:border-accent-secondary/30 rounded-2xl p-6 text-center group hover:scale-105 transition-transform duration-300 shadow-md">
                     <Trophy className="w-8 h-8 text-accent-secondary mx-auto mb-3 group-hover:rotate-12 transition-transform duration-300" />
                     <div className="text-sm font-medium text-accent-secondary">NBA</div>
-                    <div className="text-xs text-neutral-400 mt-1">Accredited</div>
+                    <div className="text-xs text-muted-foreground mt-1">Accredited</div>
                   </div>
-                  <div className="bg-gradient-to-br from-accent-primary/20 to-accent-secondary/20 border border-accent-primary/30 rounded-2xl p-6 text-center group hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-br from-accent-primary/25 to-accent-secondary/25 dark:from-accent-primary/20 dark:to-accent-secondary/20 border border-accent-primary/40 dark:border-accent-primary/30 rounded-2xl p-6 text-center group hover:scale-105 transition-transform duration-300 shadow-md">
                     <Building className="w-8 h-8 text-accent-primary mx-auto mb-3 group-hover:rotate-12 transition-transform duration-300" />
                     <div className="text-sm font-medium text-accent-primary">Autonomous</div>
-                    <div className="text-xs text-neutral-400 mt-1">Institute</div>
+                    <div className="text-xs text-muted-foreground mt-1">Institute</div>
                   </div>
-                  <div className="bg-gradient-to-br from-accent-secondary/20 to-accent-primary/20 border border-accent-secondary/30 rounded-2xl p-6 text-center group hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-br from-accent-secondary/25 to-accent-primary/25 dark:from-accent-secondary/20 dark:to-accent-primary/20 border border-accent-secondary/40 dark:border-accent-secondary/30 rounded-2xl p-6 text-center group hover:scale-105 transition-transform duration-300 shadow-md">
                     <Star className="w-8 h-8 text-accent-secondary mx-auto mb-3 group-hover:rotate-12 transition-transform duration-300" />
                     <div className="text-sm font-medium text-accent-secondary">Premier</div>
-                    <div className="text-xs text-neutral-400 mt-1">Institution</div>
+                    <div className="text-xs text-muted-foreground mt-1">Institution</div>
                   </div>
                 </div>
               </div>

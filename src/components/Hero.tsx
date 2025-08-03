@@ -163,10 +163,10 @@ const Hero = () => {
                   
                   {/* College Information - Mobile View */}
                   <div className="text-center flex-1 md:hidden">
-                    <h3 className="text-red-400 text-xs font-medium mb-1">
+                    <h3 className="text-red-600 dark:text-red-400 text-xs font-medium mb-1">
                       Sant Dnyaneshwar Shikshan Sanstha's
                     </h3>
-                    <h2 className="text-red-500 text-sm font-bold mb-1 leading-tight">
+                    <h2 className="text-red-700 dark:text-red-500 text-sm font-bold mb-1 leading-tight">
                       Annasaheb Dange College of Engineering and Technology (ADCET), Ashta
                     </h2>
                     <p className="text-muted-foreground text-xs mb-1 leading-relaxed">
@@ -176,10 +176,10 @@ const Hero = () => {
 
                   {/* College Information - Desktop View */}
                   <div className="text-center flex-1 hidden md:block">
-                    <h3 className="text-red-400 text-base font-medium mb-1">
+                    <h3 className="text-red-600 dark:text-red-400 text-base font-medium mb-1">
                       Sant Dnyaneshwar Shikshan Sanstha's
                     </h3>
-                    <h2 className="text-red-500 text-lg font-bold mb-2 leading-tight">
+                    <h2 className="text-red-700 dark:text-red-500 text-lg font-bold mb-2 leading-tight">
                       Annasaheb Dange College of Engineering and Technology (ADCET), Ashta
                     </h2>
                     <p className="text-muted-foreground text-sm mb-1 leading-relaxed">
