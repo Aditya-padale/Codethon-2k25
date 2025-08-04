@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-light text-foreground">
                 <span className="font-audiowide text-accent-primary">Codathon</span>
-                <span className="text-lg text-accent-secondary ml-2">2k25</span>
+                <span className="text-lg text-accent-secondary ml-2">2025</span>
               </h3>
               <p className="text-muted-foreground font-light leading-relaxed">
                 A national-level competitive programming competition organized by Annasaheb Dange College of Engineering and Technology.
@@ -75,7 +75,7 @@ const Footer = () => {
             
             <div className="space-y-4">
               <a 
-                href="https://unstop.com/p/codathon-2k25-annasaheb-dange-college-of-engineering-and-technolgy-1532053" 
+                href="https://unstop.com/p/codathon-2025-annasaheb-dange-college-of-engineering-and-technolgy-1532053" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-foreground hover:text-accent-primary transition-colors duration-300 group"

@@ -43,7 +43,7 @@ const Registration = () => {
         <div className="text-center mb-20 animate-slide-up">
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-full px-6 py-3 text-red-400 text-sm backdrop-blur-sm mb-8 hover:scale-105 transition-transform duration-300">
             <Clock className="w-5 h-5 animate-spin" />
-            <span className="font-medium">Registration Deadline: 31 Aug 2k25, 11:59 PM </span>
+            <span className="font-medium">Registration Deadline: 31 Aug 2025, 11:59 PM </span>
             <Badge variant="destructive" className="ml-2 animate-bounce">URGENT</Badge>
           </div>
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
@@ -81,7 +81,7 @@ const Registration = () => {
                     <div className="relative w-48 h-48 bg-white border-2 border-accent-primary/30 rounded-2xl flex items-center justify-center group-hover/qr:scale-105 transition-all duration-300 p-4">
                       <img 
                         src="/qr-code.png" 
-                        alt="Registration QR Code - Scan to register for Codathon 2k25" 
+                        alt="Registration QR Code - Scan to register for Codathon 2025" 
                         className="w-full h-full object-contain rounded-lg"
                       />
                     </div>
@@ -100,7 +100,7 @@ const Registration = () => {
                       variant="default" 
                       size="lg" 
                       className="relative w-full py-4 text-lg bg-gradient-to-r from-accent-primary to-accent-secondary hover:from-accent-primary/90 hover:to-accent-secondary/90 text-white font-medium rounded-xl transition-all duration-300 group-hover/btn:scale-105 shadow-xl"
-                      onClick={() => window.open('https://unstop.com/p/codathon-2k25-annasaheb-dange-college-of-engineering-and-technolgy-1532053', '_blank')}
+                      onClick={() => window.open('https://unstop.com/p/codathon-2025-annasaheb-dange-college-of-engineering-and-technolgy-1532053', '_blank')}
                     >
                       <ExternalLink className="w-5 h-5 mr-3 group-hover/btn:scale-110 transition-transform duration-300" />
                       Register on Unstop

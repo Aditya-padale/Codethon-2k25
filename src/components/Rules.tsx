@@ -31,7 +31,7 @@ const Rules = () => {
       rules: [
         "Absence in Round I = Elimination",
         "Round II & III conducted offline",
-        "Registration deadline: 31 Aug 2k25"
+        "Registration deadline: 31 Aug 2025"
       ]
     },
     {

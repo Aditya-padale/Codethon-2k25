@@ -11,7 +11,7 @@ const Rounds = () => {
         "Online MCQ Test",
         "C, Python, Java concepts", 
         "Top 120 qualify",
-        "08 Sept 2k25, 11 AM - 3 PM "
+        "08 Sept 2025, 11 AM - 3 PM "
       ],
       color: "from-blue-500/20 to-blue-600/20",
       iconColor: "text-blue-400",
@@ -25,7 +25,7 @@ const Rounds = () => {
         "Offline coding at ADCET campus",
         "DSA and problem-solving (C, Cpp, Python, Java)",
         "Top 50 qualify for finals",
-        "15 Sept 2k25, 10:00 AM - 1:00 PM"
+        "15 Sept 2025, 10:00 AM - 1:00 PM"
       ],
       color: "from-purple-500/20 to-purple-600/20",
       iconColor: "text-purple-400", 
@@ -39,7 +39,7 @@ const Rounds = () => {
         "Final round by IT Industries",
         "Industry-level problems",
         "Internship opportunities",
-        "15 Sept 2k25, 2:00 PM - 5:00 PM"
+        "15 Sept 2025, 2:00 PM - 5:00 PM"
       ],
       color: "from-amber-500/20 to-amber-600/20",
       iconColor: "text-amber-400",

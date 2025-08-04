@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Trophy, Users, Code, ArrowRight, Sparkles, Cpu, Terminal, ChevronDown, X } from "lucide-react";
+import { Calendar, Trophy, Users, Code, ArrowRight, Sparkles, Cpu, Terminal, ChevronDown, X, Clock } from "lucide-react";
 import LogoImage from "@/img/logo.png";
 import RightLogoImage from "@/img/right logo.png";
 import { useState } from "react";
@@ -227,7 +227,7 @@ const Hero = () => {
               <span className="bg-gradient-to-r py-4 from-[#FF7A01] via-[#FFB366] to-[#727889] text-transparent bg-clip-text font-mono">Codathon</span>
               <br />
               
-              <span className="bg-gradient-to-r py-4 from-[#0767FB] to-[#4A90E2] text-transparent bg-clip-text font-mono">2k25</span>
+              <span className="bg-gradient-to-r py-4 from-[#0767FB] to-[#4A90E2] text-transparent bg-clip-text font-mono">2025</span>
             </h1>
             
             {/* Code-themed decorations */}
@@ -310,7 +310,7 @@ const Hero = () => {
                 variant="default" 
                 size="lg" 
                 className="relative px-10 py-4 bg-gradient-to-r from-accent-primary to-accent-secondary hover:from-accent-primary/90 hover:to-accent-secondary/90 text-white font-medium text-lg rounded-xl transition-all duration-300 group-hover:scale-105 shadow-xl"
-                onClick={() => window.open('https://unstop.com/p/codathon-2k25-annasaheb-dange-college-of-engineering-and-technolgy-1532053', '_blank')}
+                onClick={() => window.open('https://unstop.com/p/codathon-2025-annasaheb-dange-college-of-engineering-and-technolgy-1532053', '_blank')}
               >
                 Register Now
                 <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
@@ -333,23 +333,29 @@ const Hero = () => {
       
       {/* Modal for Card Details */}
       {selectedCard && (
-        <div className="fixed inset-0 bg-black/60 dark:bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="relative bg-card/98 dark:bg-card/95 backdrop-blur-sm border border-border rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto scrollbar-hide shadow-2xl dark:shadow-xl">
+        <div 
+          className="fixed inset-0 bg-black/50 dark:bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedCard(null)}
+        >
+          <div 
+            className="relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto scrollbar-hide shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Fixed Floating Close Button */}
             <button
               onClick={() => setSelectedCard(null)}
-              className="fixed top-6 right-6 p-3 rounded-full bg-background/95 hover:bg-background border-2 border-border hover:border-accent-primary/50 transition-all duration-200 z-[60] shadow-lg backdrop-blur-sm"
+              className="fixed top-6 right-6 p-3 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-red-300 dark:hover:border-red-500 transition-all duration-200 z-[60] shadow-lg group"
             >
-              <X className="w-5 h-5" />
+              <X className="w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-red-500 transition-colors" />
             </button>
 
             <div className="p-6 md:p-8">
               {/* Modal Header */}
               <div className="mb-8">
-                <h2 className="text-3xl md:text-4xl font-light text-foreground mb-3">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-3">
                   {cardDetails[selectedCard as keyof typeof cardDetails].title}
                 </h2>
-                <p className="text-foreground/70 dark:text-muted-foreground text-lg font-light leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-lg font-normal leading-relaxed">
                   {cardDetails[selectedCard as keyof typeof cardDetails].description}
                 </p>
               </div>
@@ -360,17 +366,23 @@ const Hero = () => {
                   <div className="grid gap-6">
                     {cardDetails.rounds.details.map((round, index) => (
                       <div key={index} className="group relative">
-                        <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/8 to-accent-secondary/8 dark:from-accent-primary/10 dark:to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-primary/12 group-hover:to-accent-secondary/12 dark:group-hover:from-accent-primary/15 dark:group-hover:to-accent-secondary/15 transition-all duration-300" />
-                        <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/40 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-[1.02] shadow-lg dark:shadow-none">
+                        <div className="relative bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:bg-gray-100 dark:hover:bg-gray-750 transition-all duration-300 hover:transform hover:scale-[1.01] shadow-sm hover:shadow-md">
                           <div className="flex items-start justify-between mb-4">
-                            <h3 className="text-xl font-light text-foreground">{round.round}</h3>
-                            <span className="px-3 py-1 text-xs bg-accent-primary/20 text-accent-primary rounded-full font-medium uppercase tracking-wider">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{round.round}</h3>
+                            <span className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full font-medium">
                               {round.type}
                             </span>
                           </div>
-                          <p className="text-foreground/70 dark:text-muted-foreground font-light leading-relaxed mb-4">{round.description}</p>
-                          <div className="flex items-center gap-4 text-sm text-accent-secondary font-light">
-                            
+                          <p className="text-gray-600 dark:text-gray-300 font-normal leading-relaxed mb-4">{round.description}</p>
+                          <div className="flex items-center gap-4 text-sm text-blue-600 dark:text-blue-400 font-medium">
+                            <span className="flex items-center gap-1">
+                              <Calendar className="w-4 h-4" />
+                              {round.date}
+                            </span>
+                            <span className="flex items-center gap-1">
+                              <Clock className="w-4 h-4" />
+                              {round.duration}
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -382,18 +394,17 @@ const Hero = () => {
                   <div className="grid gap-6">
                     {cardDetails.languages.details.map((lang, index) => (
                       <div key={index} className="group relative">
-                        <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/8 to-accent-primary/8 dark:from-accent-secondary/10 dark:to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-secondary/12 group-hover:to-accent-primary/12 dark:group-hover:from-accent-secondary/15 dark:group-hover:to-accent-primary/15 transition-all duration-300" />
-                        <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/40 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-[1.02] shadow-lg dark:shadow-none">
+                        <div className="relative bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:bg-gray-100 dark:hover:bg-gray-750 transition-all duration-300 hover:transform hover:scale-[1.01] shadow-sm hover:shadow-md">
                           <div className="flex items-start justify-between mb-4">
-                            <h3 className="text-xl font-light text-foreground">{lang.language}</h3>
-                            <span className="px-3 py-1 text-xs bg-accent-secondary/20 text-accent-secondary rounded-full font-medium uppercase tracking-wider">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{lang.language}</h3>
+                            <span className="px-3 py-1 text-xs bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">
                               {lang.difficulty}
                             </span>
                           </div>
-                          <p className="text-foreground/70 dark:text-muted-foreground font-light leading-relaxed mb-4">{lang.description}</p>
+                          <p className="text-gray-600 dark:text-gray-300 font-normal leading-relaxed mb-4">{lang.description}</p>
                           <div className="flex flex-wrap gap-2">
                             {lang.features.map((feature, idx) => (
-                              <span key={idx} className="px-3 py-1 text-xs bg-muted/60 dark:bg-muted/50 text-foreground/70 dark:text-muted-foreground rounded-full font-light">
+                              <span key={idx} className="px-3 py-1 text-xs bg-emerald-50 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 rounded-full font-medium border border-emerald-200 dark:border-emerald-700">
                                 {feature}
                               </span>
                             ))}
@@ -408,15 +419,14 @@ const Hero = () => {
                   <div className="grid gap-6">
                     {cardDetails.internship.details.map((benefit, index) => (
                       <div key={index} className="group relative">
-                        <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/8 to-accent-secondary/8 dark:from-accent-primary/10 dark:to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-primary/12 group-hover:to-accent-secondary/12 dark:group-hover:from-accent-primary/15 dark:group-hover:to-accent-secondary/15 transition-all duration-300" />
-                        <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-primary/40 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-[1.02] shadow-lg dark:shadow-none">
+                        <div className="relative bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:bg-gray-100 dark:hover:bg-gray-750 transition-all duration-300 hover:transform hover:scale-[1.01] shadow-sm hover:shadow-md">
                           <div className="flex items-start justify-between mb-4">
-                            <h3 className="text-xl font-light text-foreground">{benefit.benefit}</h3>
-                            <span className="px-3 py-1 text-xs bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-600 dark:text-green-400 rounded-full font-medium uppercase tracking-wider">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{benefit.benefit}</h3>
+                            <span className="px-3 py-1 text-xs bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full font-medium">
                               {benefit.value}
                             </span>
                           </div>
-                          <p className="text-foreground/70 dark:text-muted-foreground font-light leading-relaxed">{benefit.description}</p>
+                          <p className="text-gray-600 dark:text-gray-300 font-normal leading-relaxed">{benefit.description}</p>
                         </div>
                       </div>
                     ))}
@@ -427,15 +437,19 @@ const Hero = () => {
                   <div className="grid gap-6">
                     {cardDetails.eligibility.details.map((criteria, index) => (
                       <div key={index} className="group relative">
-                        <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/8 to-accent-primary/8 dark:from-accent-secondary/10 dark:to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-secondary/12 group-hover:to-accent-primary/12 dark:group-hover:from-accent-secondary/15 dark:group-hover:to-accent-primary/15 transition-all duration-300" />
-                        <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-accent-secondary/40 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-[1.02] shadow-lg dark:shadow-none">
+                        <div className="relative bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:bg-gray-100 dark:hover:bg-gray-750 transition-all duration-300 hover:transform hover:scale-[1.01] shadow-sm hover:shadow-md">
                           <div className="flex items-start justify-between mb-4">
-                            <h3 className="text-xl font-light text-foreground">{criteria.criteria}</h3>
-                            <span className="px-3 py-1 text-xs bg-gradient-to-r from-blue-500/20 to-cyan-500/20 text-blue-600 dark:text-blue-400 rounded-full font-medium uppercase tracking-wider">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{criteria.criteria}</h3>
+                            <span className="px-3 py-1 text-xs bg-violet-100 dark:bg-violet-900 text-violet-700 dark:text-violet-300 rounded-full font-medium">
+                              Required
+                            </span>
+                          </div>
+                          <p className="text-gray-600 dark:text-gray-300 font-normal leading-relaxed mb-3">{criteria.description}</p>
+                          <div className="flex items-center gap-2">
+                            <span className="px-3 py-1 text-xs bg-violet-50 dark:bg-violet-900/50 text-violet-700 dark:text-violet-300 rounded-full font-medium border border-violet-200 dark:border-violet-700">
                               {criteria.requirement}
                             </span>
                           </div>
-                          <p className="text-foreground/70 dark:text-muted-foreground font-light leading-relaxed">{criteria.description}</p>
                         </div>
                       </div>
                     ))}
@@ -449,7 +463,7 @@ const Hero = () => {
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-xl blur-lg group-hover:blur-xl transition-all duration-300 opacity-50 dark:opacity-70" />
                     <Button
-                      onClick={() => window.open('https://unstop.com/p/codathon-2k25-annasaheb-dange-college-of-engineering-and-technolgy-1532053', '_blank')}
+                      onClick={() => window.open('https://unstop.com/p/codathon-2025-annasaheb-dange-college-of-engineering-and-technolgy-1532053', '_blank')}
                       className="relative px-10 py-4 bg-gradient-to-r from-accent-primary to-accent-secondary hover:from-accent-primary/90 hover:to-accent-secondary/90 text-white font-medium text-lg rounded-xl transition-all duration-300 group-hover:scale-105 shadow-xl"
                     >
                       Register for Competition
