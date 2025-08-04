@@ -43,7 +43,7 @@ const Registration = () => {
         <div className="text-center mb-20 animate-slide-up">
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-full px-6 py-3 text-red-400 text-sm backdrop-blur-sm mb-8 hover:scale-105 transition-transform duration-300">
             <Clock className="w-5 h-5 animate-spin" />
-            <span className="font-medium">Registration Deadline: 07 Sep 25, 11:59 PM IST</span>
+            <span className="font-medium">Registration Deadline: 31 Aug 2k25, 11:59 PM </span>
             <Badge variant="destructive" className="ml-2 animate-bounce">URGENT</Badge>
           </div>
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
@@ -204,7 +204,24 @@ const Registration = () => {
                       Technical Support
                     </h4>
                     <p className="text-foreground/90 font-light mb-4 leading-relaxed">
-                      Our coordination team is available to assist with registration processes and provide guidance throughout the competition.
+                      Tanmay Patil 
+                      <div className="flex items-center gap-2">
+                            <Phone className="w-4 h-4 text-accent-secondary" />
+                            <a 
+                              className="text-foreground/90 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
+                            >
+                              +91 9022976013
+                            </a>
+                          </div>
+                          Pranav Patil
+                      <div className="flex items-center gap-2">
+                            <Phone className="w-4 h-4 text-accent-secondary" />
+                            <a 
+                              className="text-foreground/90 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
+                            >
+                              +91 9130867073
+                            </a>
+                          </div>
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="text-xs bg-accent-primary/10 text-accent-primary px-3 py-1 rounded-full border border-accent-primary/20 font-medium">

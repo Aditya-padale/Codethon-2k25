@@ -10,6 +10,7 @@ const Rules = () => {
       rules: [
         "Only B.Tech students graduating in 2026",
         "Individual participation only",
+        "50/- Rs registration fee",
         "All engineering branches eligible"
       ]
     },
@@ -20,7 +21,7 @@ const Rules = () => {
       rules: [
         "Round I: Online MCQ Test (120 qualify)",
         "Round II: Offline Coding (50 qualify)",
-        "Round III: Industry Problems by CCTech"
+        "Round III: Industry Problems by IT Companies"
       ]
     },
     {
@@ -30,7 +31,7 @@ const Rules = () => {
       rules: [
         "Absence in Round I = Elimination",
         "Round II & III conducted offline",
-        "Registration deadline: 07 Sep 25"
+        "Registration deadline: 31 Aug 2k25"
       ]
     },
     {
@@ -134,7 +135,7 @@ const Rules = () => {
                       <div className="flex items-center gap-3">
                         <div className="w-3 h-3 rounded-full bg-red-500 dark:bg-red-400" />
                         <span className="text-lg font-bold text-red-700 dark:text-red-200">
-                          Follow Professional Standards
+                          Only C, Cpp ,Java ,Python are Allowed
                         </span>
                       </div>
                     </div>
@@ -163,7 +164,7 @@ const Rules = () => {
                   </div>
                   <h4 className="text-xl font-bold text-foreground mb-2">Round I</h4>
                   <p className="text-green-600 dark:text-green-300 font-bold mb-2">Online MCQ</p>
-                  <p className="text-sm text-foreground/80 dark:text-muted-foreground font-semibold">Non-elimination round</p>
+                  <p className="text-sm text-foreground/80 dark:text-muted-foreground font-semibold">Elimination round</p>
                 </CardContent>
               </Card>
 
@@ -174,7 +175,7 @@ const Rules = () => {
                   </div>
                   <h4 className="text-xl font-bold text-foreground mb-2">Round II</h4>
                   <p className="text-yellow-600 dark:text-yellow-300 font-bold mb-2">Offline Coding</p>
-                  <p className="text-sm text-foreground/80 dark:text-muted-foreground font-semibold">Elimination round</p>
+                  <p className="text-sm text-foreground/80 dark:text-muted-foreground font-semibold">Problem-Solving round</p>
                 </CardContent>
               </Card>
 
@@ -185,7 +186,7 @@ const Rules = () => {
                   </div>
                   <h4 className="text-xl font-bold text-foreground mb-2">Round III</h4>
                   <p className="text-accent-primary font-bold mb-2">Final Assessment</p>
-                  <p className="text-sm text-foreground/80 dark:text-muted-foreground font-semibold">CCTech internship awaits!</p>
+                  <p className="text-sm text-foreground/80 dark:text-muted-foreground font-semibold">IT Industries internship !</p>
                 </CardContent>
               </Card>
             </div>

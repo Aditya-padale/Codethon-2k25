@@ -101,8 +101,8 @@ const Hero = () => {
         },
         {
           criteria: "Programming Knowledge",
-          description: "Basic understanding of C, Python, and Java programming languages with DSA fundamentals.",
-          requirement: "C/Python/Java Proficiency"
+          description: "Basic understanding of C, Cpp, Python, and Java programming languages with DSA fundamentals.",
+          requirement: "C/Cpp/Python/Java Proficiency"
         },
         {
           criteria: "Registration Deadline",
@@ -371,7 +371,7 @@ const Hero = () => {
                           </div>
                           <p className="text-foreground/70 dark:text-muted-foreground font-light leading-relaxed mb-4">{round.description}</p>
                           <div className="flex items-center gap-4 text-sm text-accent-secondary font-light">
-                            <span>⏱️ Duration: {round.duration}</span>
+                            
                           </div>
                         </div>
                       </div>

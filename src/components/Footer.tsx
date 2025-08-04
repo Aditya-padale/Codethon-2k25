@@ -27,7 +27,9 @@ const Footer = () => {
               <div className="p-2 rounded-lg bg-accent-primary/20 border border-accent-primary/30">
                 <Calendar className="w-4 h-4 text-accent-primary" />
               </div>
-              <span className="font-light">September 2025</span>
+              <span className="font-light">8 Sept - Round 1<br></br>
+                15 Sept - Round 2 & 3
+              </span>
             </div>
           </div>
 
@@ -95,7 +97,7 @@ const Footer = () => {
                 <div className="p-2 rounded-lg bg-muted border border-border">
                   <Phone className="w-4 h-4" />
                 </div>
-                <span className="font-light">Support Available</span>
+                <span className="font-light">+91 77688 07185</span>
               </div>
             </div>
           </div>
@@ -109,7 +111,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 text-muted-foreground text-sm">
               <span className="font-light">© 2025 ADCET Codathon. Made with</span>
               <Heart className="w-4 h-4 text-red-400 animate-pulse" />
-              <span className="font-light">by Aditya Padale, Yashraj Salunkhe</span>
+              <span className="font-light">by Yashraj Salunkhe,  Aditya Padale</span>
             </div>
 
             {/* Competition Badge */}

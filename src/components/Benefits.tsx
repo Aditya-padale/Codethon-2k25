@@ -47,8 +47,8 @@ const Benefits = () => {
     },
     {
       icon: TrendingUp,
-      title: "Career Boost",
-      description: "Competitive programming experience for resume",
+      title: "Intenships Offers By",
+      description: "Pune, Mumbai, Kolhapur IT Industries",
       gradient: "from-cyan-500/20 to-cyan-600/10",
       iconColor: "text-cyan-400"
     },

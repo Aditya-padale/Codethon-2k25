@@ -11,7 +11,7 @@ const Rounds = () => {
         "Online MCQ Test",
         "C, Python, Java concepts", 
         "Top 120 qualify",
-        "13 Aug 25, 12:09 AM - 6:10 AM IST"
+        "08 Sept 2k25, 11 AM - 3 PM "
       ],
       color: "from-blue-500/20 to-blue-600/20",
       iconColor: "text-blue-400",
@@ -23,9 +23,9 @@ const Rounds = () => {
       description: "Prove your skills",
       features: [
         "Offline coding at ADCET campus",
-        "DSA and problem-solving",
+        "DSA and problem-solving (C, Cpp, Python, Java)",
         "Top 50 qualify for finals",
-        "15 Aug 25, 10:09 PM - 1:09 AM IST"
+        "15 Sept 2k25, 10:00 AM - 1:00 PM"
       ],
       color: "from-purple-500/20 to-purple-600/20",
       iconColor: "text-purple-400", 
@@ -36,10 +36,10 @@ const Rounds = () => {
       icon: Crown,
       description: "Claim your victory", 
       features: [
-        "Final round by CCTech",
+        "Final round by IT Industries",
         "Industry-level problems",
         "Internship opportunities",
-        "16 Aug 25, 2:09 AM - 5:09 AM IST"
+        "15 Sept 2k25, 2:00 PM - 5:00 PM"
       ],
       color: "from-amber-500/20 to-amber-600/20",
       iconColor: "text-amber-400",
@@ -177,7 +177,7 @@ const Rounds = () => {
                       </div>
                     </div>
                     <span className="text-gray-900 dark:text-foreground font-bold group-hover/item:text-purple-500 dark:group-hover/item:text-purple-400 transition-colors duration-300">Campus Coding</span>
-                    <span className="text-xs text-gray-700 dark:text-muted-foreground/80 mt-1 font-bold">DSA Challenge</span>
+                    <span className="text-xs text-gray-700 dark:text-muted-foreground/80 mt-1 font-bold">DSA Challenge + Industry Problems</span>
                   </div>
                   
                   {/* Arrow 2 */}
