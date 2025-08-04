@@ -141,7 +141,7 @@ All colors MUST be HSL.
       radial-gradient(circle at 40% 40%, hsl(142 76% 36% / 0.03) 0%, transparent 50%);
     background-attachment: fixed;
     background-size: 100% 100%;
-    transition: background-color 0.3s ease, color 0.3s ease, background-image 0.3s ease;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark body {
@@ -151,11 +151,52 @@ All colors MUST be HSL.
       radial-gradient(circle at 40% 40%, hsl(142 76% 36% / 0.1) 0%, transparent 50%);
   }
 
-  /* Smooth theme transitions for all elements */
-  *,
-  *::before,
-  *::after {
-    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  /* Optimized theme transitions - only for elements that need it */
+  .theme-transition,
+  [class*="bg-"], 
+  [class*="text-"], 
+  [class*="border-"], 
+  [class*="shadow-"],
+  .card,
+  button,
+  nav,
+  header,
+  footer,
+  [role="button"] {
+    transition: 
+      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: background-color, border-color, color, box-shadow;
+  }
+
+  /* Hardware acceleration for smooth animations */
+  .theme-transition {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  /* Disable transitions during initial page load */
+  .preload * {
+    transition: none !important;
+  }
+
+  /* Smooth icon transitions for theme toggle */
+  .theme-icon {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+  }
+
+  .theme-icon.hidden {
+    transform: rotate(90deg) scale(0);
+    opacity: 0;
+  }
+
+  .theme-icon.visible {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
   }
 
   /* Custom scrollbar */

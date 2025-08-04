@@ -6,8 +6,12 @@ import Registration from "@/components/Registration";
 import InstituteJourney from "@/components/InstituteJourney";
 import Footer from "@/components/Footer";
 import Dock from "@/components/Dock";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 const Index = () => {
+  // Scroll to top when component mounts (page loads)
+  useScrollToTop();
+
   return (
     <div className="min-h-screen bg-background m-0 p-0">
       {/* Main content */}

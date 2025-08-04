@@ -47,7 +47,7 @@ const Rules = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className=" relative overflow-hidden">
       {/* Enhanced Background for better contrast */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/20 to-background/60" />
       <div className="absolute top-0 left-1/3 w-96 h-96 bg-accent-primary/3 dark:bg-accent-primary/5 rounded-full blur-3xl" />
@@ -146,7 +146,7 @@ const Rules = () => {
           </Card>
 
           {/* Competition Flow */}
-          <div className="mt-12">
+          <div className="mt-32">
             <div className="text-center mb-16">
               <h3 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
                 Competition <span className="font-mono text-accent-primary bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent">Flow</span>

@@ -48,7 +48,7 @@ const Rounds = () => {
   ];
 
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section className=" relative overflow-hidden">
       {/* Enhanced Background elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/20 to-background/60" />
       <div className="absolute top-20 left-1/4 w-64 h-64 bg-accent-primary/3 dark:bg-accent-primary/5 rounded-full blur-3xl" />

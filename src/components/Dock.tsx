@@ -13,18 +13,18 @@ import {
 } from "lucide-react";
 
 const Dock = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, isTransitioning } = useTheme();
 
   return (
     <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
-      <div className="w-max p-2 rounded-full border pointer-events-auto relative mx-auto flex min-h-full h-full items-center px-1 bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]">
+      <div className="w-max p-2 rounded-full border pointer-events-auto relative mx-auto flex min-h-full h-full items-center px-1 bg-background theme-transition [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]">
         
         {/* Home Button */}
         <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
+            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground theme-transition"
             asChild
           >
             <a href="/">
@@ -38,7 +38,7 @@ const Dock = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
+            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground theme-transition"
             asChild
           >
             <a href="/college-info">
@@ -48,14 +48,14 @@ const Dock = () => {
         </div>
 
         {/* Separator */}
-        <Separator orientation="vertical" className="h-full mx-2" />
+        <Separator orientation="vertical" className="h-full mx-2 theme-transition" />
 
         {/* Instagram Button */}
         <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
+            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground theme-transition"
             asChild
           >
             <a href="https://www.instagram.com/adcet_ashta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
@@ -69,7 +69,7 @@ const Dock = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
+            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground theme-transition"
             asChild
           >
             <a href="https://www.facebook.com/groups/adcetadmin/?ref=share&mibextid=NSMWBT" target="_blank" rel="noopener noreferrer">
@@ -83,7 +83,7 @@ const Dock = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground"
+            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground theme-transition"
             asChild
           >
             <a href="https://www.linkedin.com/school/annasaheb-dange-college-of-engineering-and-technology-ashta/" target="_blank" rel="noopener noreferrer">
@@ -93,19 +93,26 @@ const Dock = () => {
         </div>
 
         {/* Separator */}
-        <Separator orientation="vertical" className="h-full mx-2" />
+        <Separator orientation="vertical" className="h-full mx-2 theme-transition" />
 
         {/* Theme Toggle Button */}
         <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full h-9 w-9 px-2 hover:bg-accent hover:text-accent-foreground transition-colors"
+            className={`rounded-full h-9 w-9 px-2 hover:bg-accent hover:text-accent-foreground theme-transition ${
+              isTransitioning ? 'pointer-events-none' : ''
+            }`}
             onClick={toggleTheme}
+            disabled={isTransitioning}
             aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           >
-            <Sun className={`h-[1.2rem] w-[1.2rem] transition-all ${theme === 'dark' ? 'rotate-90 scale-0' : 'rotate-0 scale-100'}`} />
-            <Moon className={`absolute h-[1.2rem] w-[1.2rem] transition-all ${theme === 'dark' ? 'rotate-0 scale-100' : 'rotate-90 scale-0'}`} />
+            <Sun className={`h-[1.2rem] w-[1.2rem] theme-icon ${
+              theme === 'dark' ? 'hidden' : 'visible'
+            }`} />
+            <Moon className={`absolute h-[1.2rem] w-[1.2rem] theme-icon ${
+              theme === 'dark' ? 'visible' : 'hidden'
+            }`} />
           </Button>
         </div>
 

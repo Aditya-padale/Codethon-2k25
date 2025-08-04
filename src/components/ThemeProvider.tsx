@@ -6,6 +6,7 @@ interface ThemeContextType {
   theme: Theme;
   toggleTheme: () => void;
   setTheme: (theme: Theme) => void;
+  isTransitioning: boolean;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -45,8 +46,13 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     return defaultTheme;
   });
 
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
   useEffect(() => {
     const root = document.documentElement;
+    
+    // Remove preload class to enable transitions after initial render
+    document.body.classList.remove('preload');
     
     // Remove existing theme classes
     root.classList.remove('light', 'dark');
@@ -58,18 +64,41 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     localStorage.setItem('theme', theme);
   }, [theme]);
 
+  // Add preload class on initial render to prevent flash
+  useEffect(() => {
+    document.body.classList.add('preload');
+    const timer = setTimeout(() => {
+      document.body.classList.remove('preload');
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   const setTheme = (newTheme: Theme) => {
-    setThemeState(newTheme);
+    if (newTheme === theme) return; // Prevent unnecessary updates
+    
+    setIsTransitioning(true);
+    
+    // Use requestAnimationFrame for smooth transition
+    requestAnimationFrame(() => {
+      setThemeState(newTheme);
+      
+      // End transition after animation completes
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 200); // Match CSS transition duration
+    });
   };
 
   const toggleTheme = () => {
-    setThemeState(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
   };
 
   const value = {
     theme,
     toggleTheme,
     setTheme,
+    isTransitioning,
   };
 
   return (

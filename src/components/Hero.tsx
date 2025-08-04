@@ -264,41 +264,40 @@ const Hero = () => {
           </div> */}
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto pt-4 px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto pt-4 px-4">
             <div className="group relative cursor-pointer" onClick={() => setSelectedCard('rounds')}>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/5 to-accent-secondary/5 dark:from-accent-primary/10 dark:to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-primary/10 group-hover:to-accent-secondary/10 dark:group-hover:from-accent-primary/15 dark:group-hover:to-accent-secondary/15 transition-all duration-300" />
-              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/50 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none">
+              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/50 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none h-32 md:h-36 flex flex-col justify-center items-center">
                 <Calendar className="w-6 h-6 md:w-8 md:h-8 text-accent-primary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
                 <div className="text-2xl md:text-3xl font-light text-foreground mb-1">3</div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Rounds</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium text-center">Rounds</div>
               </div>
             </div>
             
             <div className="group relative cursor-pointer" onClick={() => setSelectedCard('languages')}>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/5 to-accent-primary/5 dark:from-accent-secondary/10 dark:to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-secondary/10 group-hover:to-accent-primary/10 dark:group-hover:from-accent-secondary/15 dark:group-hover:to-accent-primary/15 transition-all duration-300" />
-              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none">
+              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none h-32 md:h-36 flex flex-col justify-center items-center">
                 <Code className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
-                <div className="text-lg md:text-xl font-light text-foreground mb-1">C • Python • Java</div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Languages</div>
+                <div className="text-sm md:text-base font-light text-foreground mb-1 text-center">C • Python • Java</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium text-center">Languages</div>
               </div>
             </div>
             
             <div className="group relative cursor-pointer" onClick={() => setSelectedCard('internship')}>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/5 to-accent-secondary/5 dark:from-accent-primary/10 dark:to-accent-secondary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-primary/10 group-hover:to-accent-secondary/10 dark:group-hover:from-accent-primary/15 dark:group-hover:to-accent-secondary/15 transition-all duration-300" />
-              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/50 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none">
+              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-primary/50 dark:hover:border-accent-primary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none h-32 md:h-36 flex flex-col justify-center items-center">
                 <Trophy className="w-6 h-6 md:w-8 md:h-8 text-accent-primary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
                 <div className="text-2xl md:text-3xl font-light text-foreground mb-1">Winner</div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Internship</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium text-center">Internship</div>
               </div>
             </div>
             
             <div className="group relative cursor-pointer" onClick={() => setSelectedCard('eligibility')}>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-secondary/5 to-accent-primary/5 dark:from-accent-secondary/10 dark:to-accent-primary/10 rounded-xl blur-xl group-hover:blur-2xl group-hover:from-accent-secondary/10 group-hover:to-accent-primary/10 dark:group-hover:from-accent-secondary/15 dark:group-hover:to-accent-primary/15 transition-all duration-300" />
-              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none">
+              <div className="relative bg-card/90 dark:bg-card/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 hover:border-accent-secondary/50 dark:hover:border-accent-secondary/30 transition-all duration-300 hover:transform hover:scale-105 shadow-lg dark:shadow-none hover:shadow-xl dark:hover:shadow-none h-32 md:h-36 flex flex-col justify-center items-center">
                 <Users className="w-6 h-6 md:w-8 md:h-8 text-accent-secondary mx-auto mb-2 md:mb-3 group-hover:rotate-12 transition-transform duration-300" />
                 <div className="text-2xl md:text-3xl font-light text-foreground mb-1">B.Tech</div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Final Year Only
-                </div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider font-medium text-center">Final Year Only</div>
               </div>
             </div>
           </div>
