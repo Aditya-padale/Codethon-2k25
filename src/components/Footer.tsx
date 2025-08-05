@@ -109,9 +109,9 @@ const Footer = () => {
             
             {/* Copyright */}
             <div className="flex items-center gap-2 text-muted-foreground text-sm">
-              <span className="font-light">© 2025 ADCET Codathon. Made with</span>
+              <span className="font-light">© 2025 ADCET Codathon. Made</span>
               <Heart className="w-4 h-4 text-red-400 animate-pulse" />
-              <span className="font-light">by Aditya Padale,  Yashraj Salunkhe</span>
+              <span className="font-light">by  Yashraj Salunkhe ,  Aditya Padale</span>
             </div>
 
             {/* Competition Badge */}
