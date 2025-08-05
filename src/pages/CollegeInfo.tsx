@@ -314,8 +314,12 @@ const CollegeInfo = () => {
               <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-orange-500/30 transition-all duration-300 group hover:transform hover:scale-105">
                 <div className="h-1 bg-gradient-to-r from-orange-500 to-yellow-500" />
                 <CardContent className="p-6 text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-orange-500/20 to-yellow-500/20 flex items-center justify-center group-hover:from-orange-500/30 group-hover:to-yellow-500/30 transition-all duration-300">
-                    <Users className="w-10 h-10 text-orange-500" />
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-orange-500/30 group-hover:border-orange-500/50 transition-all duration-300">
+                    <img 
+                      src="https://www.adcet.ac.in/images/desk/Hon-Shri-Annasaheb-Dange.jpg" 
+                      alt="Shri. Annasaheb Dange"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
                   </div>
                   <div className="bg-orange-500 text-white text-xs font-medium px-3 py-1 rounded-full mb-3 inline-block">
                     Shri. Annasaheb Dange
@@ -338,8 +342,12 @@ const CollegeInfo = () => {
               <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-blue-500/30 transition-all duration-300 group hover:transform hover:scale-105">
                 <div className="h-1 bg-gradient-to-r from-blue-500 to-cyan-500" />
                 <CardContent className="p-6 text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center group-hover:from-blue-500/30 group-hover:to-cyan-500/30 transition-all duration-300">
-                    <BookOpen className="w-10 h-10 text-blue-500" />
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-blue-500/30 group-hover:border-blue-500/50 transition-all duration-300">
+                    <img 
+                      src="https://www.adcet.ac.in/images/desk/Adv-Rajendra-R-Dange.jpg" 
+                      alt="Adv. Rajendra R. Dange"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
                   </div>
                   <div className="bg-blue-500 text-white text-xs font-medium px-3 py-1 rounded-full mb-3 inline-block">
                     Adv. Rajendra R. Dange
@@ -362,8 +370,12 @@ const CollegeInfo = () => {
               <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-green-500/30 transition-all duration-300 group hover:transform hover:scale-105">
                 <div className="h-1 bg-gradient-to-r from-green-500 to-emerald-500" />
                 <CardContent className="p-6 text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-500/20 to-emerald-500/20 flex items-center justify-center group-hover:from-green-500/30 group-hover:to-emerald-500/30 transition-all duration-300">
-                    <Award className="w-10 h-10 text-green-500" />
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-green-500/30 group-hover:border-green-500/50 transition-all duration-300">
+                    <img 
+                      src="https://www.adcet.ac.in/images/desk/Shri-Vishwanath-R-Dange.jpg" 
+                      alt="Shri. Vishwanath R. Dange"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
                   </div>
                   <div className="bg-green-500 text-white text-xs font-medium px-3 py-1 rounded-full mb-3 inline-block">
                     Shri. Vishwanath R. Dange
@@ -386,8 +398,12 @@ const CollegeInfo = () => {
               <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-purple-500/30 transition-all duration-300 group hover:transform hover:scale-105">
                 <div className="h-1 bg-gradient-to-r from-purple-500 to-pink-500" />
                 <CardContent className="p-6 text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center group-hover:from-purple-500/30 group-hover:to-pink-500/30 transition-all duration-300">
-                    <GraduationCap className="w-10 h-10 text-purple-500" />
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-purple-500/30 group-hover:border-purple-500/50 transition-all duration-300">
+                    <img 
+                      src="https://www.adcet.ac.in/images/desk/Laxman-Y-Waghmode.jpg" 
+                      alt="Dr. Laxman Y Waghmode"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
                   </div>
                   <div className="bg-purple-500 text-white text-xs font-medium px-3 py-1 rounded-full mb-3 inline-block">
                     Dr. Laxman Y Waghmode

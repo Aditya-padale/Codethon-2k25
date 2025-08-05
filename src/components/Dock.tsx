@@ -9,9 +9,7 @@ import {
   Facebook, 
   Linkedin, 
   Sun, 
-  Moon,
-  Camera,
-  Calendar
+  Moon
 } from "lucide-react";
 
 const Dock = () => {
@@ -57,7 +55,7 @@ const Dock = () => {
         </div>
 
         {/* Gallery Button */}
-        <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
+        {/* <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
           <Button
             variant="ghost"
             size="icon"
@@ -66,10 +64,10 @@ const Dock = () => {
           >
             <Camera className="size-4" />
           </Button>
-        </div>
+        </div> */}
 
         {/* Calendar Button */}
-        <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
+        {/* <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
           <Button
             variant="ghost"
             size="icon"
@@ -78,7 +76,7 @@ const Dock = () => {
           >
             <Calendar className="size-4" />
           </Button>
-        </div>
+        </div> */}
 
         {/* Separator */}
         <Separator orientation="vertical" className="h-full mx-2 theme-transition" />
