@@ -2,12 +2,15 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Calendar, Trophy, Users, ExternalLink } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
+import { useNavigate, useLocation } from "react-router-dom";
 import LogoImage from "@/img/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme } = useTheme();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,11 +21,24 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
+    // If we're not on the main page, navigate to main page first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      // We're already on the main page, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
+    setIsMobileMenuOpen(false);
   };
 
   const navItems = [
@@ -49,7 +65,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           
           {/* Logo */}
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
+          <div className="flex items-center gap-3 cursor-pointer" onClick={() => {
+            if (location.pathname !== '/') {
+              navigate('/');
+            } else {
+              scrollToSection('hero');
+            }
+          }}>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-full blur-lg"></div>
               <div className="relative w-10 h-10 md:w-12 md:h-12 bg-background border border-accent-primary/50 rounded-full p-1.5">

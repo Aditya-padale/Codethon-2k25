@@ -8,7 +8,7 @@ import LogoImage from "@/img/logo.png";
 import Dock from "@/components/Dock";
 import Footer from "@/components/Footer";
 import { useScrollToTop } from "@/hooks/useScrollToTop";
-import Header from '../components/Header'
+import Header from "@/components/Header";
 
 const CollegeInfo = () => {
   // Scroll to top when component mounts (page loads)
