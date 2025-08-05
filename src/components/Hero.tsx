@@ -121,7 +121,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Consistent Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-primary/5 dark:bg-accent-primary/8 rounded-full blur-3xl" />

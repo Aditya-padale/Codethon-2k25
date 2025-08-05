@@ -8,6 +8,7 @@ import LogoImage from "@/img/logo.png";
 import Dock from "@/components/Dock";
 import Footer from "@/components/Footer";
 import { useScrollToTop } from "@/hooks/useScrollToTop";
+import Header from '../components/Header'
 
 const CollegeInfo = () => {
   // Scroll to top when component mounts (page loads)
@@ -154,6 +155,7 @@ const CollegeInfo = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
+      <Header />
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-transparent pointer-events-none" />
       <div className="absolute top-20 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-accent-primary/5 rounded-full blur-3xl animate-pulse pointer-events-none" />
@@ -162,7 +164,7 @@ const CollegeInfo = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-8 md:py-16">
         
         {/* College Header Section */}
-        <div className="max-w-6xl mx-auto mb-12 md:mb-16">
+        <div className="max-w-6xl mx-auto mb-12 md:mb-16 mt-20">
           <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-accent-primary/30 transition-all duration-300 overflow-hidden">
             <div className="h-1 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary" />
             
@@ -233,6 +235,216 @@ const CollegeInfo = () => {
           </p>
           
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-accent-primary to-transparent mx-auto" />
+        </div>
+
+        {/* College Vision & Mission Section */}
+        <div className="mb-16 md:mb-20">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-500 p-[1px] rounded-full mb-6">
+                <div className="flex items-center gap-2 bg-background/90 backdrop-blur-sm rounded-full px-4 py-2 text-blue-500 text-sm">
+                  <Target className="w-4 h-4" />
+                  <span className="font-medium">Vision & Mission</span>
+                </div>
+              </div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-6">
+                Our <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Purpose</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Vision Card */}
+              <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-blue-500/30 transition-all duration-300 group">
+                <div className="h-1 bg-gradient-to-r from-blue-500 to-cyan-500" />
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
+                      <Target className="w-6 h-6 text-blue-500" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground">Our Vision</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    To be a Leader in producing professionally competent engineers.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Mission Card */}
+              <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-purple-500/30 transition-all duration-300 group">
+                <div className="h-1 bg-gradient-to-r from-purple-500 to-pink-500" />
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
+                      <Rocket className="w-6 h-6 text-purple-500" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground">Our Mission</h3>
+                  </div>
+                  <div className="space-y-3 text-muted-foreground leading-relaxed">
+                    <p><span className="font-medium text-purple-500">M1.</span> Imparting effective outcome based education.</p>
+                    <p><span className="font-medium text-purple-500">M2.</span> Preparing students through skill oriented courses to excel in their profession with ethical values.</p>
+                    <p><span className="font-medium text-purple-500">M3.</span> Promoting research to benefit the society.</p>
+                    <p><span className="font-medium text-purple-500">M4.</span> Strengthening relationship with all the stakeholders.</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+
+        {/* Leadership Team Section */}
+        <div className="mb-16 md:mb-20">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 p-[1px] rounded-full mb-6">
+                <div className="flex items-center gap-2 bg-background/90 backdrop-blur-sm rounded-full px-4 py-2 text-orange-500 text-sm">
+                  <Users className="w-4 h-4" />
+                  <span className="font-medium">Leadership Team</span>
+                </div>
+              </div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-6">
+                Our <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Desk</span>
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Visionary leaders driving excellence in technical education and rural development
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Founder */}
+              <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-orange-500/30 transition-all duration-300 group hover:transform hover:scale-105">
+                <div className="h-1 bg-gradient-to-r from-orange-500 to-yellow-500" />
+                <CardContent className="p-6 text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-orange-500/20 to-yellow-500/20 flex items-center justify-center group-hover:from-orange-500/30 group-hover:to-yellow-500/30 transition-all duration-300">
+                    <Users className="w-10 h-10 text-orange-500" />
+                  </div>
+                  <div className="bg-orange-500 text-white text-xs font-medium px-3 py-1 rounded-full mb-3 inline-block">
+                    Shri. Annasaheb Dange
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Founder</h3>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    Visionary founder of Sant Dnyaneshwar Shikshan Sanstha, dedicated to bringing quality technical education to rural Maharashtra.
+                  </p>
+                  <button 
+                    onClick={() => window.open('https://www.adcet.ac.in/message-by-founder-chairman', '_blank')}
+                    className="text-orange-500 hover:text-orange-600 text-sm font-medium flex items-center gap-1 mx-auto transition-colors group-hover:gap-2"
+                  >
+                    Read More
+                    <ExternalLink className="w-3 h-3" />
+                  </button>
+                </CardContent>
+              </Card>
+
+              {/* Secretary */}
+              <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-blue-500/30 transition-all duration-300 group hover:transform hover:scale-105">
+                <div className="h-1 bg-gradient-to-r from-blue-500 to-cyan-500" />
+                <CardContent className="p-6 text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center group-hover:from-blue-500/30 group-hover:to-cyan-500/30 transition-all duration-300">
+                    <BookOpen className="w-10 h-10 text-blue-500" />
+                  </div>
+                  <div className="bg-blue-500 text-white text-xs font-medium px-3 py-1 rounded-full mb-3 inline-block">
+                    Adv. Rajendra R. Dange
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Secretary</h3>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    Committed to student-centric policies and creating a nurturing academic environment for all students.
+                  </p>
+                  <button 
+                    onClick={() => window.open('https://www.adcet.ac.in/message-by-secretary', '_blank')}
+                    className="text-blue-500 hover:text-blue-600 text-sm font-medium flex items-center gap-1 mx-auto transition-colors group-hover:gap-2"
+                  >
+                    Read More
+                    <ExternalLink className="w-3 h-3" />
+                  </button>
+                </CardContent>
+              </Card>
+
+              {/* Joint Secretary */}
+              <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-green-500/30 transition-all duration-300 group hover:transform hover:scale-105">
+                <div className="h-1 bg-gradient-to-r from-green-500 to-emerald-500" />
+                <CardContent className="p-6 text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-500/20 to-emerald-500/20 flex items-center justify-center group-hover:from-green-500/30 group-hover:to-emerald-500/30 transition-all duration-300">
+                    <Award className="w-10 h-10 text-green-500" />
+                  </div>
+                  <div className="bg-green-500 text-white text-xs font-medium px-3 py-1 rounded-full mb-3 inline-block">
+                    Shri. Vishwanath R. Dange
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Joint Secretary</h3>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    Focused on academic excellence and fostering innovation in engineering education and research.
+                  </p>
+                  <button 
+                    onClick={() => window.open('https://www.adcet.ac.in/message-by-joint-secretary', '_blank')}
+                    className="text-green-500 hover:text-green-600 text-sm font-medium flex items-center gap-1 mx-auto transition-colors group-hover:gap-2"
+                  >
+                    Read More
+                    <ExternalLink className="w-3 h-3" />
+                  </button>
+                </CardContent>
+              </Card>
+
+              {/* Director */}
+              <Card className="bg-card/95 backdrop-blur-sm border border-border hover:border-purple-500/30 transition-all duration-300 group hover:transform hover:scale-105">
+                <div className="h-1 bg-gradient-to-r from-purple-500 to-pink-500" />
+                <CardContent className="p-6 text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center group-hover:from-purple-500/30 group-hover:to-pink-500/30 transition-all duration-300">
+                    <GraduationCap className="w-10 h-10 text-purple-500" />
+                  </div>
+                  <div className="bg-purple-500 text-white text-xs font-medium px-3 py-1 rounded-full mb-3 inline-block">
+                    Dr. Laxman Y Waghmode
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Director</h3>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    Leading the institute towards global excellence in technical education and industry collaboration.
+                  </p>
+                  <button 
+                    onClick={() => window.open('https://www.adcet.ac.in/message-by-director', '_blank')}
+                    className="text-purple-500 hover:text-purple-600 text-sm font-medium flex items-center gap-1 mx-auto transition-colors group-hover:gap-2"
+                  >
+                    Read More
+                    <ExternalLink className="w-3 h-3" />
+                  </button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+
+        {/* Key Highlights Section */}
+        <div className="mb-16 md:mb-20">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-500 p-[1px] rounded-full mb-6">
+                <div className="flex items-center gap-2 bg-background/90 backdrop-blur-sm rounded-full px-4 py-2 text-indigo-500 text-sm">
+                  <Star className="w-4 h-4" />
+                  <span className="font-medium">Key Highlights</span>
+                </div>
+              </div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-6">
+                Our <span className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">Achievements</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              {achievements.map((achievement, index) => {
+                const IconComponent = achievement.icon;
+                return (
+                  <Card key={index} className="bg-card/95 backdrop-blur-sm border border-border hover:border-indigo-500/30 transition-all duration-300 text-center group hover:transform hover:scale-105">
+                    <CardContent className="p-4">
+                      <div className={`w-12 h-12 mx-auto mb-3 rounded-full bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center group-hover:from-indigo-500/30 group-hover:to-purple-500/30 transition-all duration-300`}>
+                        <IconComponent className={`w-6 h-6 ${achievement.color}`} />
+                      </div>
+                      <div className="text-lg md:text-xl font-bold text-foreground mb-1">
+                        {achievement.number}
+                      </div>
+                      <div className="text-xs text-muted-foreground">
+                        {achievement.label}
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
         {/* Modern Timeline Section */}

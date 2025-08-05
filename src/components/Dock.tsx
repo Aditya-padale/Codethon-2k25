@@ -9,11 +9,20 @@ import {
   Facebook, 
   Linkedin, 
   Sun, 
-  Moon
+  Moon,
+  Camera,
+  Calendar
 } from "lucide-react";
 
 const Dock = () => {
   const { theme, toggleTheme, isTransitioning } = useTheme();
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
@@ -44,6 +53,30 @@ const Dock = () => {
             <a href="/college-info">
               <GraduationCap className="size-4" />
             </a>
+          </Button>
+        </div>
+
+        {/* Gallery Button */}
+        <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground theme-transition"
+            onClick={() => scrollToSection('gallery')}
+          >
+            <Camera className="size-4" />
+          </Button>
+        </div>
+
+        {/* Calendar Button */}
+        <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{width: "40px"}}>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="rounded-full size-12 hover:bg-accent hover:text-accent-foreground theme-transition"
+            onClick={() => scrollToSection('calendar')}
+          >
+            <Calendar className="size-4" />
           </Button>
         </div>
 
