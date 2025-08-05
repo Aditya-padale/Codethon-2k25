@@ -26,18 +26,18 @@ const EventCalendarIntegration = () => {
     {
       id: "round1",
       title: "Round 1: Training Ground (Online MCQ)",
-      date: "2025-08-13",
-      time: "12:09 AM - 6:10 AM IST",
-      duration: "6 hours 1 minute",
+      date: "2025-09-08",
+      time: "11:00 AM - 3:00 PM",
+      duration: "4 hours",
       location: "Online Platform",
       type: "online",
       status: "upcoming",
-      description: "Online MCQ test covering basic programming concepts in C, Python, and Java. Top 120 participants qualify for Round 2.",
+      description: "Online MCQ test covering basic programming concepts in C, C++, Python, and Java. Top 200+ participants qualify for Round 2.",
       details: [
-        "6 hours duration",
+        "4 hours duration",
         "Multiple choice questions",
-        "C, Python, Java concepts",
-        "120 qualifiers for next round",
+        "C, C++, Python, Java concepts",
+        "200+ qualifiers for next round",
         "National level participation"
       ],
       preparation: [
@@ -50,8 +50,8 @@ const EventCalendarIntegration = () => {
     {
       id: "round2",
       title: "Round 2: Battle Arena (Offline Coding)",
-      date: "2025-08-15",
-      time: "10:09 PM - 1:09 AM IST",
+      date: "2025-09-15",
+      time: "10:00 AM - 1:00 PM",
       duration: "3 hours",
       location: "ADCET Campus, Ashta, Sangli",
       type: "offline",
@@ -74,8 +74,8 @@ const EventCalendarIntegration = () => {
     {
       id: "round3",
       title: "Round 3: Victory Quest (Final Round)",
-      date: "2025-08-16",
-      time: "2:09 AM - 5:09 AM IST",
+      date: "2025-09-15",
+      time: "2:00 PM - 5:00 PM",
       duration: "3 hours",
       location: "ADCET Campus, Ashta, Sangli",
       type: "offline",
@@ -98,14 +98,13 @@ const EventCalendarIntegration = () => {
   ];
 
   const generateCalendarLink = (event: any, type: 'google' | 'outlook' | 'apple' | 'ics') => {
-    const startDate = new Date(`${event.date}T${event.time.split(' - ')[0].includes('AM') ? '00:09:00' : '12:09:00'}`);
+    const startDate = new Date(`${event.date}T${event.time.split(' - ')[0].includes('AM') ? '11:00:00' : '14:00:00'}`);
     const endTime = event.time.split(' - ')[1];
     const endDate = new Date(startDate);
     
     // Calculate end time based on duration
-    if (event.duration.includes('6 hours')) {
-      endDate.setHours(endDate.getHours() + 6);
-      endDate.setMinutes(endDate.getMinutes() + 1);
+    if (event.duration.includes('4 hours')) {
+      endDate.setHours(endDate.getHours() + 4);
     } else {
       endDate.setHours(endDate.getHours() + 3);
     }
@@ -237,8 +236,8 @@ END:VCALENDAR`;
         {/* Countdown to Next Event */}
         <div className="max-w-md mx-auto mb-16">
           <CountdownTimer 
-            targetDate="2025-08-13T00:09:00"
-            title="Time Until Round 1 Begins"
+            targetDate="2025-09-08T11:00:00"
+            title="Time Until Codathon 2025 Begins"
           />
         </div>
 

@@ -14,24 +14,24 @@ const Hero = () => {
       details: [
         {
           round: "Round 1: Training Ground",
-          description: "Online MCQ based test on basic C, Python, Java and programming concepts. Top 120 participants qualify for Round 2.",
-          duration: "6 hours 1 minute (12:09 AM - 6:10 AM IST)",
+          description: "Online MCQ based test on basic C, C++, Python, Java and programming concepts. Top 200+ participants qualify for Round 2.",
+          duration: "4 hours (11:00 AM - 3:00 PM IST)",
           type: "Online Screening Round",
-          date: "13 Aug 25"
+          date: "8 Sept 25"
         },
         {
           round: "Round 2: Battle Arena",
           description: "Offline coding round at ADCET campus focusing on DSA and problem-solving. Top 50 participants qualify for final round.",
-          duration: "3 hours (10:09 PM - 1:09 AM IST)", 
+          duration: "3 hours (10:00 AM - 1:00 PM IST)", 
           type: "Semi-Final Coding Round",
-          date: "15-16 Aug 25"
+          date: "15 Sept 25"
         },
         {
           round: "Round 3: Victory Quest",
           description: "Final coding round conducted and evaluated by CCTech with industry-based problem statements. Winners receive internship opportunities.",
-          duration: "3 hours (2:09 AM - 5:09 AM IST)",
+          duration: "3 hours (2:00 PM - 5:00 PM IST)",
           type: "Final Round",
-          date: "16 Aug 25"
+          date: "15 Sept 25"
         }
       ]
     },
@@ -44,6 +44,12 @@ const Hero = () => {
           description: "The foundational language that powers system programming and competitive coding.",
           features: ["Fast execution", "Memory control", "System programming"],
           difficulty: "Beginner to Advanced"
+        },
+        {
+          language: "C++",
+          description: "Enhanced version of C with object-oriented features, widely used in competitive programming.",
+          features: ["Object-oriented", "STL libraries", "High performance"],
+          difficulty: "Intermediate to Advanced"
         },
         {
           language: "Python",
@@ -101,8 +107,8 @@ const Hero = () => {
         },
         {
           criteria: "Programming Knowledge",
-          description: "Basic understanding of C, Cpp, Python, and Java programming languages with DSA fundamentals.",
-          requirement: "C/Cpp/Python/Java Proficiency"
+          description: "Basic understanding of C, C++, Python, and Java programming languages with DSA fundamentals.",
+          requirement: "C/C++/Python/Java Proficiency"
         },
         {
           criteria: "Registration Deadline",

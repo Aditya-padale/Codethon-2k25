@@ -24,19 +24,19 @@ const PastEventGallery = () => {
     {
       year: "2024",
       title: "Codathon 2024: The Ultimate Coding Battle",
-      date: "September 15-16, 2024",
-      participants: 2200,
+      date: "September, 2024",
+      participants: 500,
       location: "ADCET Campus, Ashta",
       highlights: [
-        "Record 2200+ participants",
-        "150+ colleges represented", 
-        "₹5L+ internship opportunities",
-        "Industry partnership with CCTech"
+        "Record 500+ participants",
+        "Many colleges represented", 
+        "Internship opportunities",
+        "Industry partnership with IT Industries"
       ],
       images: [
         {
           url: "/EventGallery/event1.jpeg",
-          caption: "Codathon 2024 - Opening ceremony and participant registration",
+          caption: "Codathon 2024 - Participant registration",
           type: "image"
         },
         {
@@ -133,8 +133,12 @@ const PastEventGallery = () => {
             <div className="flex items-center gap-4 mb-8">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-full blur-lg" />
-                <div className="relative w-16 h-16 bg-background border-2 border-accent-primary/50 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-accent-primary">{event.year}</span>
+                <div className="relative w-16 h-16 bg-background border-2 border-accent-primary/50 rounded-full flex items-center justify-center p-2">
+                  <img 
+                    src="/favicon.png" 
+                    alt="Codathon Logo" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
               <div className="flex-1">

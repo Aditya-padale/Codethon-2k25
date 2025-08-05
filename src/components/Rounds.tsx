@@ -9,9 +9,9 @@ const Rounds = () => {
       description: "Build your foundation",
       features: [
         "Online MCQ Test",
-        "C, Python, Java concepts", 
-        "Top 120 qualify",
-        "08 Sept 2025, 11 AM - 3 PM "
+        "C, C++, Python, Java concepts", 
+        "Top 200+ qualify",
+        "8 Sept 2025, 11:00 AM - 3:00 PM"
       ],
       color: "from-blue-500/20 to-blue-600/20",
       iconColor: "text-blue-400",
@@ -23,7 +23,7 @@ const Rounds = () => {
       description: "Prove your skills",
       features: [
         "Offline coding at ADCET campus",
-        "DSA and problem-solving (C, Cpp, Python, Java)",
+        "DSA and problem-solving (C, C++, Python, Java)",
         "Top 50 qualify for finals",
         "15 Sept 2025, 10:00 AM - 1:00 PM"
       ],

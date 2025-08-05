@@ -135,7 +135,7 @@ const Rules = () => {
                       <div className="flex items-center gap-3">
                         <div className="w-3 h-3 rounded-full bg-red-500 dark:bg-red-400" />
                         <span className="text-lg font-bold text-red-700 dark:text-red-200">
-                          Only C, Cpp ,Java ,Python are Allowed
+                          Only C, C++ ,Java ,Python are Allowed
                         </span>
                       </div>
                     </div>
@@ -186,7 +186,7 @@ const Rules = () => {
                   </div>
                   <h4 className="text-xl font-bold text-foreground mb-2">Round III</h4>
                   <p className="text-accent-primary font-bold mb-2">Final Assessment</p>
-                  <p className="text-sm text-foreground/80 dark:text-muted-foreground font-semibold">IT Industries internship !</p>
+                  <p className="text-sm text-foreground/80 dark:text-muted-foreground font-semibold">IT Industries Problems</p>
                 </CardContent>
               </Card>
             </div>

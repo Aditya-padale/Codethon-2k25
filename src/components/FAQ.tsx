@@ -12,7 +12,7 @@ const FAQ = () => {
     },
     {
       question: "What programming languages are allowed?",
-      answer: "You can code in C, Cpp, Python, or Java. Choose the language you're most comfortable with for all three rounds of the competition."
+      answer: "You can code in C, C++, Python, or Java. Choose the language you're most comfortable with for all three rounds of the competition."
     },
     {
       question: "Is there any registration fee?",
@@ -20,19 +20,19 @@ const FAQ = () => {
     },
     {
       question: "What are the competition dates and timings?",
-      answer: "Round 1 (Online MCQ): 8 Sept 2025, 12:09 AM - 6:10 AM IST (6 hours). Round 2 & 3 (Offline): 15-16 Sept 2025 at ADCET campus, Ashta."
+      answer: "Round 1 (Online MCQ): 8 Sept 2025, 11:00 AM - 3:00 PM IST (4 hours). Round 2 (Offline): 15 Sept 2025, 10:00 AM - 1:00 PM IST at ADCET campus. Round 3 (Final): 15 Sept 2025, 2:00 PM - 5:00 PM IST at ADCET campus, Ashta."
     },
     {
       question: "How many participants will qualify for each round?",
-      answer: "Round 1: Top 120 participants qualify for Round 2. Round 2: Top 50 participants qualify for the final Round 3. Winners receive internship opportunities from CCTech."
+      answer: "Round 1: Top 200+ participants qualify for Round 2. Round 2: Top 50 participants qualify for the final Round 3. Winners receive internship opportunities from CCTech."
     },
     {
       question: "Do I need to come to the college for Round 2 & 3?",
-      answer: "Yes, Round 2 and Round 3 are offline rounds conducted at ADCET campus in Ashta, Sangli, Maharashtra. Accommodation arrangements can be discussed upon qualification."
+      answer: "Yes, Round 2 and Round 3 are offline rounds conducted on the same day (15 Sept 2025) at ADCET campus in Ashta, Sangli, Maharashtra. Accommodation arrangements can be discussed upon qualification."
     },
     {
       question: "What topics should I prepare for?",
-      answer: "Round 1: Basic programming concepts in C, Cpp, Python, Java. Round 2: Data Structures and Algorithms, problem-solving. Round 3: Industry-based problems evaluated by CCTech."
+      answer: "Round 1: Basic programming concepts in C, C++, Python, Java. Round 2: Data Structures and Algorithms, problem-solving. Round 3: Industry-based problems evaluated by CCTech."
     },
     {
       question: "What are the prizes and benefits?",
