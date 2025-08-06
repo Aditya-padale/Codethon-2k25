@@ -4,6 +4,13 @@ import { Star, Briefcase, Building, Award, Zap, TrendingUp, Users, Target, Spark
 const Benefits = () => {
   const benefits = [
     {
+      icon: Gift,
+      title: "Cash Prize Pool",
+      description: "₹10,000 total prize pool for winners and top performers across all competition rounds",
+      gradient: "from-emerald-500/20 to-emerald-600/10",
+      iconColor: "text-emerald-400"
+    },
+    {
       icon: Briefcase,
       title: "Internship cum Placement",
       description: "Exciting internship cum placement opportunity for top performers with direct industry connection",

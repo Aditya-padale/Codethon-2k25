@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Trophy, Users, Code, ArrowRight, Sparkles, Cpu, Terminal, ChevronDown, X, Clock } from "lucide-react";
+import { Calendar, Trophy, Users, Code, ArrowRight, Sparkles, Cpu, Terminal, ChevronDown, X, Clock, Gift } from "lucide-react";
 import LogoImage from "@/img/logo.png";
 import RightLogoImage from "@/img/right logo.png";
 import { useState } from "react";
@@ -28,7 +28,7 @@ const Hero = () => {
         },
         {
           round: "Round 3: Victory Quest",
-          description: "Final coding round conducted and evaluated by CCTech with industry-based problem statements. Winners receive internship opportunities.",
+          description: "Final coding round conducted and evaluated by IT Industries with industry-based problem statements. Winners receive internship opportunities.",
           duration: "3 hours (2:00 PM - 5:00 PM IST)",
           type: "Final Round",
           date: "15 Sept 25"
@@ -252,6 +252,22 @@ const Hero = () => {
               <br className="hidden sm:inline" />
               <span className="text-foreground/70 dark:text-muted-foreground/80"> Compete, Create, Conquer</span>
             </p>
+
+            {/* Prize Pool Banner */}
+            <div className="mt-6 max-w-md mx-auto">
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-green-500/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300" />
+                <div className="relative bg-emerald-50/90 dark:bg-emerald-950/50 border-2 border-emerald-500/30 hover:border-emerald-500/50 rounded-full px-6 py-3 backdrop-blur-sm transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center justify-center gap-3">
+                    <Gift className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+                    <span className="text-emerald-700 dark:text-emerald-300 font-semibold text-lg">₹10,000 Prize Pool</span>
+                    <Gift className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-accent-secondary to-transparent" />
           </div>
           

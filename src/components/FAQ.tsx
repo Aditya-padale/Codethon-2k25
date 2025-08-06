@@ -24,7 +24,7 @@ const FAQ = () => {
     },
     {
       question: "How many participants will qualify for each round?",
-      answer: "Round 1: Top 200+ participants qualify for Round 2. Round 2: Top 50 participants qualify for the final Round 3. Winners receive internship opportunities from CCTech."
+      answer: "Round 1: Top 200+ participants qualify for Round 2. Round 2: Top 50 participants qualify for the final Round 3. Winners receive internship opportunities from IT Industries."
     },
     {
       question: "Do I need to come to the college for Round 2 & 3?",
@@ -32,11 +32,11 @@ const FAQ = () => {
     },
     {
       question: "What topics should I prepare for?",
-      answer: "Round 1: Basic programming concepts in C, C++, Python, Java. Round 2: Data Structures and Algorithms, problem-solving. Round 3: Industry-based problems evaluated by CCTech."
+      answer: "Round 1: Basic programming concepts in C, C++, Python, Java. Round 2: Data Structures and Algorithms, problem-solving. Round 3: Industry-based problems evaluated by IT Industries."
     },
     {
       question: "What are the prizes and benefits?",
-      answer: "Winners get internship opportunities at CCTech, certificates, networking opportunities with industry professionals, and recognition as national-level programming champions."
+      answer: "Winners receive ₹10,000 cash prize pool, internship opportunities at IT Tech, certificates, networking opportunities with industry professionals, and recognition as national-level programming champions."
     },
     {
       question: "How will I know if I qualify for the next round?",

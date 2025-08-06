@@ -80,10 +80,10 @@ const EventCalendarIntegration = () => {
       location: "ADCET Campus, Ashta, Sangli",
       type: "offline",
       status: "upcoming",
-      description: "Final coding round evaluated by CCTech with industry-based problems. Winners receive internship opportunities.",
+      description: "Final coding round evaluated by IT Industries with industry-based problems. Winners receive internship opportunities.",
       details: [
         "Industry-level problems",
-        "CCTech evaluation",
+        "IT Industries evaluation",
         "Internship opportunities",
         "Championship titles",
         "Professional networking"
