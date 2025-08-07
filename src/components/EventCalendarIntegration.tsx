@@ -25,16 +25,16 @@ const EventCalendarIntegration = () => {
   const events = [
     {
       id: "round1",
-      title: "Round 1: Training Ground (Online MCQ)",
+      title: "Round 1: Red Light Green Light (Online MCQ)",
       date: "2025-09-08",
-      time: "11:00 AM - 3:00 PM",
-      duration: "4 hours",
+      time: "11:00 AM - 7:00 PM",
+      duration: "8 hours",
       location: "Online Platform",
       type: "online",
       status: "upcoming",
       description: "Online MCQ test covering basic programming concepts in C, C++, Python, and Java. Top 200+ participants qualify for Round 2.",
       details: [
-        "4 hours duration",
+        "8 hours duration",
         "Multiple choice questions",
         "C, C++, Python, Java concepts",
         "200+ qualifiers for next round",
@@ -103,8 +103,8 @@ const EventCalendarIntegration = () => {
     const endDate = new Date(startDate);
     
     // Calculate end time based on duration
-    if (event.duration.includes('4 hours')) {
-      endDate.setHours(endDate.getHours() + 4);
+    if (event.duration.includes('8 hours')) {
+      endDate.setHours(endDate.getHours() + 8);
     } else {
       endDate.setHours(endDate.getHours() + 3);
     }
@@ -236,7 +236,7 @@ END:VCALENDAR`;
         {/* Countdown to Next Event */}
         <div className="max-w-md mx-auto mb-16">
           <CountdownTimer 
-            targetDate="2025-09-08T11:00:00"
+            targetDate="2025-09-05T11:00:00"
             title="Time Until Codathon 2025 Begins"
           />
         </div>

@@ -4,14 +4,14 @@ import { Brain, Sword, Crown, Monitor, Code2, Trophy, ChevronRight, Zap } from "
 const Rounds = () => {
   const rounds = [
     {
-      title: "Training Ground",
+      title: "Red Light Green Light",
       icon: Brain,
       description: "Build your foundation",
       features: [
         "Online MCQ Test",
         "C, C++, Python, Java concepts", 
         "Top 200+ qualify",
-        "8 Sept 2025, 11:00 AM - 3:00 PM"
+        "8 Sept 2025, 11:00 AM - 7:00 PM"
       ],
       color: "from-blue-500/20 to-blue-600/20",
       iconColor: "text-blue-400",

@@ -15,7 +15,7 @@ const Hero = () => {
         {
           round: "Round 1: Red Light Green Light",
           description: "Online MCQ based test on basic C, C++, Python, Java and programming concepts. Top 200+ participants qualify for Round 2.",
-          duration: "4 hours (11:00 AM - 3:00 PM IST)",
+          duration: "8 hours (11:00 AM - 7:00 PM IST)",
           type: "Online Screening Round",
           date: "8 Sept 25"
         },

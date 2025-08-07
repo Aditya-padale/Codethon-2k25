@@ -20,7 +20,7 @@ const FAQ = () => {
     },
     {
       question: "What are the competition dates and timings?",
-      answer: "Round 1 (Online MCQ): 8 Sept 2025, 11:00 AM - 3:00 PM IST (4 hours). Round 2 (Offline): 15 Sept 2025, 10:00 AM - 1:00 PM IST at ADCET campus. Round 3 (Final): 15 Sept 2025, 2:00 PM - 5:00 PM IST at ADCET campus, Ashta."
+      answer: "Round 1 (Online MCQ): 8 Sept 2025, 11:00 AM - 7:00 PM IST (8 hours). Round 2 (Offline): 15 Sept 2025, 10:00 AM - 1:00 PM IST at ADCET campus. Round 3 (Final): 15 Sept 2025, 2:00 PM - 5:00 PM IST at ADCET campus, Ashta."
     },
     {
       question: "How many participants will qualify for each round?",

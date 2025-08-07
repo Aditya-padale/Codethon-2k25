@@ -43,7 +43,7 @@ const Registration = () => {
         <div className="text-center mb-20 animate-slide-up">
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-full px-6 py-3 text-red-400 text-sm backdrop-blur-sm mb-8 hover:scale-105 transition-transform duration-300">
             <Clock className="w-5 h-5 animate-spin" />
-            <span className="font-medium">Registration Deadline: 7 Sept 2025, 11:59 PM </span>
+            <span className="font-medium">Registration Deadline: 5 Sept 2025, 11:59 PM </span>
             <Badge variant="destructive" className="ml-2 animate-bounce">URGENT</Badge>
           </div>
           <h2 className="text-5xl md:text-6xl font-light mb-8 tracking-tight">
