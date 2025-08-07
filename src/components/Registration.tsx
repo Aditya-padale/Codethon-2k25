@@ -7,7 +7,7 @@ const Registration = () => {
   const contacts = [
     {
       name: "Prof. Swapnil Gramopadhye",
-      phone: "+91 97667 03147",
+      phone: null,
       email: "smg_cse@adcet.in",
       role: "Faculty Co-Ordinator",
       icon: User,
@@ -15,7 +15,7 @@ const Registration = () => {
     },
     {
       name: "Prof. Prachi Pathak", 
-      phone: "+91 91588 39366",
+      phone: null,
       email: "psp_iot@adcet.in",
       role: "Faculty Co-Ordinator",
       icon: User,
@@ -166,15 +166,17 @@ const Registration = () => {
                           {contact.role}
                         </p>
                         <div className="space-y-2">
-                          <div className="flex items-center gap-2">
-                            <Phone className="w-4 h-4 text-accent-secondary" />
-                            <a 
-                              href={`tel:${contact.phone}`}
-                              className="text-foreground/90 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
-                            >
-                              {contact.phone}
-                            </a>
-                          </div>
+                          {contact.phone && (
+                            <div className="flex items-center gap-2">
+                              <Phone className="w-4 h-4 text-accent-secondary" />
+                              <a 
+                                href={`tel:${contact.phone}`}
+                                className="text-foreground/90 hover:text-accent-primary transition-colors duration-200 font-medium text-sm"
+                              >
+                                {contact.phone}
+                              </a>
+                            </div>
+                          )}
                           <div className="flex items-center gap-2">
                             <Mail className="w-4 h-4 text-accent-primary" />
                             <a 

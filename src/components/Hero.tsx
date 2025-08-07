@@ -13,7 +13,7 @@ const Hero = () => {
       description: "The competition consists of 3 challenging rounds designed to test your coding skills progressively.",
       details: [
         {
-          round: "Round 1: Training Ground",
+          round: "Round 1: Red Light Green Light",
           description: "Online MCQ based test on basic C, C++, Python, Java and programming concepts. Top 200+ participants qualify for Round 2.",
           duration: "4 hours (11:00 AM - 3:00 PM IST)",
           type: "Online Screening Round",
